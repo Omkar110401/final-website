@@ -194,6 +194,9 @@
     article {
       container: card/inline-size;
     }
+    .education-heading img{
+      display: none;
+    }
     .article-body p {
       display: none;
     }
@@ -203,6 +206,10 @@
     figure{
       display: none;
     }
+    .articles{
+      padding: 0;
+    }
+
   }
 
   @media screen and (max-width:360px){

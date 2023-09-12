@@ -246,6 +246,9 @@
   .nav-link:hover::before {
     width: 40%;
   }
+  .logo{
+    display: none;
+  }
 }
 
 .social-icons{

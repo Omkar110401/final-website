@@ -164,16 +164,7 @@
     background-color: rgba(253, 73, 160, 0.75);
     animation: 0s 0s fly-in 0 reverse both;
   }
-  
-  @media (min-width: 535px) {
-    .card_title {
-      animation: 0.5s 0.25s fly-out 1 both;
-    }
-    .project-heading{
-      font-size: 30px;
-    }
-  }
-  
+
   .card:focus .card_title,
   .card:hover .card_title {
     animation: 0.5s ease-in 0s fly-in 1 both;
@@ -193,7 +184,10 @@
     margin-right: 0.05em;
   }
   
-  @media (min-width: 480px) {
+  @media (max-width: 768px) {
+    .card_title {
+      animation: 0.5s 0.25s fly-out 1 both;
+    }
     .project-heading{
       font-size: 30px;
     }
@@ -202,6 +196,9 @@
       max-height: 20rem;
       scrollbar-width: thin;
       scrollbar-color: #b4fee7 #a16ae8;
+    }
+    .project-heading img{
+      display: none;
     }
   
     .card_text::-webkit-scrollbar {

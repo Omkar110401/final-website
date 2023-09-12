@@ -17,10 +17,12 @@
   
   .inner-short-timeline {
     border-radius: 15px;
-  
-  
   }
   
+  #smaller-heading{
+    display: none;
+  }
+
   .short-timeline-heading h2 {
     letter-spacing: 2px;
     font-size: 40px;
@@ -248,7 +250,20 @@
       padding-left: 0;
       border-left: none;
     }
-  
+    .short-timeline-heading img{
+      display: none;
+    }
+    .short-timeline-heading{
+      font-size: 24px;
+    }
+    #bigger-heading{
+      display: none;
+    }
+
+    #smaller-heading{
+      display: block;
+    }
+
     #timeline li {
       margin: 50px 0;
     }
@@ -299,5 +314,9 @@
     .circle,
     .date {
       display: none;
+    }
+    .timeline-button{
+      margin: 0;
+      justify-content: center;
     }
   }
