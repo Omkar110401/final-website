@@ -33,6 +33,62 @@ scrollToAboutMe() {
   }
 }
 
+scrollToSkills() {
+  const element = document.getElementById('skills');
+  if (element) {
+    if (window.scrollY !== 0) {
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top first
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 500); // Wait for the scroll to top animation to finish
+    } else {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}
+
+scrollToInternship() {
+  const element = document.getElementById('internship');
+  if (element) {
+    if (window.scrollY !== 0) {
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top first
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 500); // Wait for the scroll to top animation to finish
+    } else {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}
+
+scrollToEducation() {
+  const element = document.getElementById('education');
+  if (element) {
+    if (window.scrollY !== 0) {
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top first
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 500); // Wait for the scroll to top animation to finish
+    } else {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}
+
+scrollToProjects() {
+  const element = document.getElementById('project');
+  if (element) {
+    if (window.scrollY !== 0) {
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top first
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 500); // Wait for the scroll to top animation to finish
+    } else {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}
+
 closeMobileMenu() {
   const mobileMenu = document.querySelector('.mobile-menu');
   if (mobileMenu) {

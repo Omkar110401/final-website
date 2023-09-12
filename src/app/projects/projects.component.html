@@ -1,0 +1,25 @@
+<div class="projects" [ngClass]="{'hide-component':!isScrolled4400, 'show-component':isScrolled4400}">
+    <div class="project-heading">
+        <img src="..\assets\images\projects.png" alt="">
+        <h2 class="hover"><span>Project </span>Gallery</h2>
+    </div>
+    <div class="inner-project" [ngClass]="{'hide-component':!isScrolled4600, 'show-component':isScrolled4600}">
+        <div class="main">
+            <ul class="cards">
+              <li class="cards_item" *ngFor="let p of projects">
+                <div class="card" tabindex="0">
+                  <div class="card_image"><img [src]="p.img"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">{{p.title}}</h2>
+                    <div class="card_text">
+                      <p>{{p.text}}</p>
+                      <!-- <p>Technologies: <strong>{{p.skills}}</strong></p> -->
+                      <p class="upcharge"><strong>{{p.skills}}</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+    </div>
+</div>

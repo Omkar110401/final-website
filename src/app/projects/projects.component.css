@@ -1,0 +1,447 @@
+.project-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  
+  .projects{
+    /* border: 1px solid black; */
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .inner-project{
+    border-radius: 15px;
+    padding: 1em;
+    /* background-color: rgb(255, 157, 234); */
+    
+  }
+  .project-heading h2 {
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+  
+  .project-heading h2>span{
+    color:rgb(30, 0, 139);
+      text-shadow: 5px 5px 5px #a251ff;
+  }
+  
+  .hover {
+    color: #0000;
+    background:
+        linear-gradient(90deg, rgb(30, 0, 139) 50%, #000 0) var(--_p, 100%)/200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: .4s;
+  }
+  
+  .hover:hover {
+    cursor: pointer;
+    --_p: 0%;
+    text-shadow: 5px 5px 5px #a251ff;
+  }
+  
+  .project-heading img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .project-heading img:hover {
+    animation: flyRocket 6s linear 5;
+  }
+  
+  @keyframes flyRocket {
+   0%{
+    transform: rotate(-45deg);
+   }
+   25%{
+    transform: rotate(0) translateY(1em);
+   }
+   50%{
+    transform: rotate(0) translateY(0.5em);
+   }
+   75%{
+    transform: rotate(180deg) translateY(-1em);
+   }
+   100%{
+    transform: rotate(360deg) translateY(-0.5em)
+   }
+  }
+
+  .hide-component{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .show-component{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  :root {
+    --purple: #603f8b;
+    --aqua: #b4fee7;
+    --violet: #a16ae8;
+    --fuchsia: #fd49a0;
+    --white: #efefef;
+    --black: #222;
+    --trueBlack: #000;
+  }
+  
+  
+  .cards {
+    display: grid;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .cards_item {
+    display: flex;
+  }
+  
+  .card_image {
+    display: flex;
+    height: 250px;
+    box-shadow: 0 50px 100px 0 #a16ae8;
+  }
+  
+  .card_image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: #603f8b;
+    border-radius: 5px 25px 5px 50px;
+    transition: transform 0.1s linear, box-shadow 0.2s;
+  }
+  
+  .card_text:focus,
+  .card:focus {
+    outline: 2px dashed #b4fee7;
+  }
+  
+  .card:focus,
+  .card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card_content {
+    padding: 0.5rem 1rem 1rem;
+    color: white;
+  }
+  
+  .card_title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: auto;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px 0 0 5px;
+    transform: rotate(-3.3deg);
+    transform-origin: left top;
+    font-family: Georgia, Times, serif;
+    font-weight: 600;
+    font-size: 1.325rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: rgba(253, 73, 160, 0.75);
+    animation: 0s 0s fly-in 0 reverse both;
+  }
+  
+  @media (min-width: 535px) {
+    .card_title {
+      animation: 0.5s 0.25s fly-out 1 both;
+    }
+    .project-heading{
+      font-size: 30px;
+    }
+  }
+  
+  .card:focus .card_title,
+  .card:hover .card_title {
+    animation: 0.5s ease-in 0s fly-in 1 both;
+  }
+  
+  .card_text {
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica,
+      Helvetica Neue, Arial, sans-serif;
+    line-height: 1.5;
+    text-size-adjust: 0.2px;
+    padding: 0 1rem;
+  }
+  
+  .card_text p:first-of-type:first-letter {
+    font-size: 1.8em;
+    font-family: Georgia, Times, serif;
+    margin-right: 0.05em;
+  }
+  
+  @media (min-width: 480px) {
+    .project-heading{
+      font-size: 30px;
+    }
+    .card_text {
+      overflow: auto;
+      max-height: 20rem;
+      scrollbar-width: thin;
+      scrollbar-color: #b4fee7 #a16ae8;
+    }
+  
+    .card_text::-webkit-scrollbar {
+      width: 12px;
+    }
+  
+    .card_text::-webkit-scrollbar-track {
+      background: #a16ae8;
+    }
+  
+    .card_text::-webkit-scrollbar-thumb {
+      background-color: #b4fee7
+    }
+  }
+  
+  .card_text strong {
+    color: #b4fee7
+  }
+  
+  .upcharge {
+    position: relative;
+    font-weight: 600;
+    background-color: #a16ae8;
+    padding: 0.5rem 0.75rem;
+    color: black;
+    border-radius: 0 10px;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .upcharge::after,
+  .upcharge::before {
+    content: "+";
+    display: block;
+    line-height: 0;
+    font-size: 3rem;
+    position: absolute;
+    color: #603f8b;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  .upcharge::before {
+    left: 0;
+    top: 0.5rem;
+  }
+  
+  .upcharge::after {
+    right: 0;
+    bottom: 1.25rem;
+  }
+  
+  .note {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 900;
+    background-image: linear-gradient(
+      -45deg,
+      transparent 10%,
+      #b4fee7 10.5%,
+      #b4fee7 90%,
+      transparent 90.5%
+    );
+    color: black;
+    font-size: 1.3em;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+  
+  @keyframes fly-in {
+    0% {
+      top: 0;
+      right: 0;
+      font-size: 1.325rem;
+    }
+  
+    25% {
+      top: 0;
+      right: -200%;
+      font-size: 1.325rem;
+    }
+  
+    26% {
+      font-size: 2rem;
+    }
+  
+    100% {
+      top: 2rem;
+      right: 0;
+      font-size: 2rem;
+    }
+  }
+  
+  @keyframes fly-out {
+    0% {
+      top: 2rem;
+      right: 0;
+      font-size: 2rem;
+    }
+  
+    50% {
+      top: 0;
+      right: -200%;
+      font-size: 1.325rem;
+    }
+  
+    100% {
+      top: 0;
+      right: 0;
+      font-size: 1.325rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    display: grid;
+    grid-template-rows: 1fr 10rem auto;
+    grid-template-areas: "main" "." "footer";
+    overflow-x: hidden;
+    background: #F5F7FA;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+  }
+  body .footer {
+    z-index: 1;
+    --footer-background:#ED5565;
+    display: grid;
+    position: relative;
+    grid-area: footer;
+    min-height: 12rem;
+  }
+  body .footer .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: var(--footer-background);
+    filter: url("#blob");
+  }
+  body .footer .bubbles .bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: var(--footer-background);
+    border-radius: 100%;
+    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+            animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+  }
+  body .footer .content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 4rem;
+    padding: 2rem;
+    background: var(--footer-background);
+  }
+  body .footer .content a, body .footer .content p {
+    color: #F5F7FA;
+    text-decoration: none;
+  }
+  body .footer .content b {
+    color: white;
+  }
+  body .footer .content p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+  body .footer .content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .footer .content > div > div {
+    margin: 0.25rem 0;
+  }
+  body .footer .content > div > div > * {
+    margin-right: 0.5rem;
+  }
+  body .footer .content > div .image {
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.25rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @-webkit-keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  
+  @keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  @-webkit-keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+  @keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }

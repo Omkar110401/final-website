@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin:1em;
   }
   
   
@@ -17,14 +18,14 @@
   }
   
   .intern-heading h2>span{
-    color:#6200ff;
+    color:rgb(30, 0, 139);
       text-shadow: 2px 2px 2px #7700ff;
   }
   
   .hover {
     color: #0000;
     background:
-        linear-gradient(90deg, #4800bb 50%, #000 0) var(--_p, 100%)/200% no-repeat;
+        linear-gradient(90deg, rgb(30, 0, 139) 50%, #000 0) var(--_p, 100%)/200% no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     transition: .4s;

@@ -1,0 +1,234 @@
+.education-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  
+  .education{
+    /* border: 1px solid black; */
+    padding: 2em;
+    
+  }
+
+  .inner-education{
+    border-radius: 15px;
+    padding: 2em;
+    /* background-color: rgb(218, 218, 218); */
+    background-color: rgb(230, 230, 230);
+
+    
+  }
+  .education-heading h2 {
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+  
+  .education-heading h2>span{
+    color:rgb(30, 0, 139);
+      text-shadow: 5px 5px 5px #a251ff;
+  }
+  
+  .hover {
+    color: #0000;
+    background:
+        linear-gradient(90deg, rgb(30, 0, 139) 50%, #000 0) var(--_p, 100%)/200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: .4s;
+  }
+  
+  .hover:hover {
+    cursor: pointer;
+    --_p: 0%;
+    text-shadow: 5px 5px 5px #a251ff;
+  }
+  
+  .education-heading img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  &.inactive{
+    display: none;
+  }
+
+  &.active{
+    display: block;
+  }
+
+  .education-heading img:hover{
+    animation: moveUp 2s linear forwards;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes moveUp{
+    0%{transform: translateY(0);}
+    25%{transform: translateY(1em);}
+    50%{transform: translateY(0) rotate(360deg);}
+    75%{transform: translateY(-1em);}
+    100%{transform: translateY(0) rotate(360deg);}
+  }
+  
+  article {
+    --img-scale: 1.001;
+    --title-color: white;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    --link-icon-color-hover:#ff02ff;
+    position: relative;
+    border-radius: 16px;
+    background: #4109c5;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+    
+  }
+  
+
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+    color:#ff02ff;
+  }
+  
+  /* basic article elements styling */
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    width: 700px;
+    height: 200px;
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 24px;
+    color: white;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  article a:focus {
+    outline: 1px dotted #ff02ff;
+  }
+  
+  article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    color: var(--link-icon-color);
+    transition: all 0.3s;
+  }
+  
+  /* using the has() relational pseudo selector to update our custom properties */
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: #ff02ff;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    --link-icon-color:#ff02ff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  ul{
+    padding: 0;
+  }
+  
+  ul li{
+    font-size: 18px;
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+  }
+
+  .hide-component{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .show-component{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /************************ 
+  Generic layout (demo looks)
+  **************************/
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  #bigger-heading{
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    .article-body p {
+      display: none;
+    }
+    #smaller-heading{
+      display:block;
+    }
+    figure{
+      display: none;
+    }
+  }
+
+  @media screen and (min-width:961px){
+    #smaller-heading{
+      display:none;
+    } 
+     #bigger-heading{
+      display: block;
+    }
+  }
+
+  
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }

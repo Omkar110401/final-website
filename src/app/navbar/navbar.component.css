@@ -22,6 +22,12 @@
   align-items: center;
 }
 
+.navbar-left img{
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+}
+
 /* Increase the font size of the logo */
 /* Neon line styles for the logo */
 .logo {
@@ -81,7 +87,7 @@
 }
 
 .nav-link:hover{
-  color: rgb(62, 0, 233);
+  color: rgb(97, 50, 228);
   transition: 1s ease;
 }
 
@@ -240,6 +246,18 @@
   .nav-link:hover::before {
     width: 40%;
   }
+}
+
+.social-icons{
+  display: flex;
+  gap:1em;
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+
+.social-icons img{
+  width: 30px;
+  height: 30px;
 }
 
 .navbar-left>a{

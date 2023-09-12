@@ -1,0 +1,37 @@
+<div class="education" [ngClass]="{'hide-component':!isScrolled3600, 'show-component':isScrolled3600}">
+    <div class="education-heading">
+        <img src="..\assets\images\education.png" alt="">
+        <h2 class="hover" id="bigger-heading">My <span>Academic Journey</span></h2>
+        <h2 class="hover" id="smaller-heading">My<span> Academics</span></h2>
+    </div>
+    <div class="inner-education" [ngClass]="{'hide-component':!isScrolled3800, 'show-component':isScrolled3800}">
+        <section class="articles">
+            <article  *ngFor="let edu of education">
+                <div class="article-wrapper">
+                    <figure>
+                        <img [src]="edu.img" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>{{edu.name}}</h2>
+                        <ul *ngFor="let det of edu.details">
+                            <li>Duration: <b>{{det.start}} - {{det.end}}</b></li>
+                            <li>Location: <b>{{det.location}}</b></li>
+                            <li>Degree: <b>{{det.degree}}</b></li>
+                            <li>Specialization <b>{{det.specialization}}</b></li>
+                            <li>Marks: <b>{{det.marks}}% <span *ngIf="edu.name==='Yeshwantrao Chavan College of Engineering (YCCE)'">/ {{det.cgpa}}</span></b></li>
+                        </ul>
+                        <a [href]="edu.link" class="read-more" target="_blank">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</div>

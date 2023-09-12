@@ -1,35 +1,43 @@
 <nav class="navbar">
     <div class="navbar-left">
-      <a routerLink=""><span class="logo">Omkar Joshi</span></a>
+        <img src="..\assets\images\logo.png" alt=""><a routerLink=""><span class="logo">Omkar Joshi</span></a>
     </div>
     <div class="navbar-right">
-      <a class="nav-link" (click)="toggleResumeDropdown($event)">
-        Resume
-        <div class="resume-dropdown" *ngIf="showResumeDropdown">
-          <a href="https://drive.google.com/file/d/1ibm6P5Tw7nWtN7YEfqdYxW4XOVcdK001/view?usp=drive_link" target="_blank">View</a>
-          <a href="..\assets\files\OmkarJoshi-Resume.pdf" download="Omkar_Joshi_Resume.pdf">Download</a>
-        </div>
-      </a>
-      <a  class="nav-link" routerLink="timeline">Timeline</a>
-      <a  class="nav-link" href="https://tawk.to/omkarchat" target="_blank">Contact Me</a>
+        <a class="nav-link" (click)="toggleResumeDropdown($event)">
+            Resume
+            <div class="resume-dropdown" *ngIf="showResumeDropdown">
+                <a href="https://drive.google.com/file/d/1ibm6P5Tw7nWtN7YEfqdYxW4XOVcdK001/view?usp=drive_link"
+                    target="_blank">View</a>
+                <a href="..\assets\files\OmkarJoshi-Resume.pdf" download="Omkar_Joshi_Resume.pdf">Download</a>
+            </div>
+        </a>
+        <a class="nav-link" routerLink="timeline">Timeline</a>
+        <a class="nav-link" href="https://tawk.to/omkarchat" target="_blank">Contact Me</a>
     </div>
     <div class="mobile-menu-icon" [class.clicked]="mobileMenuActive" (click)="toggleMobileMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
-  </nav>
-  
-  <div class="mobile-menu" [ngClass]="{ 'active': mobileMenuActive }">
-    <a href="https://drive.google.com/file/d/1ibm6P5Tw7nWtN7YEfqdYxW4XOVcdK001/view?usp=drive_link" target="_blank" class="nav-link">View Resume</a>
-    <a href="..\assets\files\OmkarJoshi-Resume.pdf" download="OmkarJoshi-Resume.pdf" class="nav-link">Download Resume</a>
-    <a  class="nav-link" (click)="scrollToAboutMe()">About Me</a>
-    <a  class="nav-link">Internship</a>
-    <a  class="nav-link">Education</a>
-    <a class="nav-link">Skills</a>
-    <a  class="nav-link">Projects</a>
-    <a  class="nav-link" routerLink="timeline">Timeline</a>
-    <a  class="nav-link" href="https://tawk.to/omkarchat" target="_blank">Contact Me</a>
-    
-  </div>
-  
+</nav>
+
+<div class="mobile-menu" [ngClass]="{ 'active': mobileMenuActive }">
+    <a href="https://drive.google.com/file/d/1ibm6P5Tw7nWtN7YEfqdYxW4XOVcdK001/view?usp=drive_link" target="_blank"
+        class="nav-link">View Resume</a>
+    <a href="..\assets\files\OmkarJoshi-Resume.pdf" download="OmkarJoshi-Resume.pdf" class="nav-link">Download
+        Resume</a>
+    <a class="nav-link" (click)="scrollToAboutMe()">About Me</a>
+    <a class="nav-link" (click)="scrollToInternship()">Internship</a>
+    <a class="nav-link" (click)="scrollToEducation()">Education</a>
+    <a class="nav-link" (click)="scrollToSkills()">Skills</a>
+    <a class="nav-link" (click)="scrollToProjects()">Projects</a>
+    <a class="nav-link" routerLink="timeline">Timeline</a>
+    <a class="nav-link" href="https://tawk.to/omkarchat" target="_blank">Contact Me</a>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/"><img src="..\assets\images\instagram.png" alt=""></a>
+        <!-- <a href=""><img src="..\assets\images\twitter.png" alt=""></a> -->
+        <a href="https://www.linkedin.com/in/omksamjoshi2001/"><img src="..\assets\images\linkedin.png" alt=""></a>
+        <a href="https://github.com/Omkar110401"><img src="..\assets\images\git.png" alt="">
+        </a>
+    </div>
+</div>
