@@ -50,14 +50,6 @@
     margin-right: 20px;
   }
   
-  &.inactive{
-    display: none;
-  }
-
-  &.active{
-    display: block;
-  }
-
   .education-heading img:hover{
     animation: moveUp 2s linear forwards;
     animation-iteration-count: 3;
