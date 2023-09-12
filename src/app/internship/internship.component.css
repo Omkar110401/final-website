@@ -1,10 +1,9 @@
-    
 .intern-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:1em;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
   
   
   .inner-intern{
@@ -116,7 +115,7 @@
   }
   
   .card-link {
-    background-color: #4A1EFF; /* Purple button background color */
+    background-color: #6908d8; /* Purple button background color */
     color: #fff; /* White button text color */
     padding: 10px 20px;
     margin-top: 2em;
@@ -129,8 +128,7 @@
   }
   
   .card-link:hover {
-    border: 1px solid white;
-    background-color: #7B4EFF; /* Lighter purple button background color on hover */
+    background-color: #340ab1; /* Lighter purple button background color on hover */
     color: #fff; /* Maintain white text color on hover */
     transform: scale(1.05); /* Scale the button on hover */
   }
@@ -194,6 +192,7 @@
       max-width: calc(100% - 0px); /* One card per row on smaller screens */
     }
     .intern-heading{
+      text-align: center;
       font-size: 30px;
     }
   }

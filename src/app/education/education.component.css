@@ -79,7 +79,7 @@
     --link-icon-color-hover:#ff02ff;
     position: relative;
     border-radius: 16px;
-    background: #4109c5;
+    background: #8009c5;
     transform-origin: center;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
@@ -153,10 +153,10 @@
   /* using the has() relational pseudo selector to update our custom properties */
   article:has(:hover, :focus) {
     --img-scale: 1.1;
-    --title-color: #ff02ff;
+    --title-color: #000000;
     --link-icon-translate: 0;
     --link-icon-opacity: 1;
-    --link-icon-color:#ff02ff;
+    --link-icon-color:#000000;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
@@ -210,6 +210,12 @@
     }
     figure{
       display: none;
+    }
+  }
+
+  @media screen and (max-width:360px){
+    article {
+      container: card/inline-size;
     }
   }
 
