@@ -194,8 +194,8 @@
     article {
       container: card/inline-size;
     }
-    .education-heading img{
-      display: none;
+    .education-heading h2{
+      font-size: 28px;
     }
     .article-body p {
       display: none;
@@ -209,12 +209,8 @@
     .articles{
       padding: 0;
     }
-
-  }
-
-  @media screen and (max-width:360px){
-    article {
-      container: card/inline-size;
+    .article-body h2{
+      text-align: center;
     }
   }
 

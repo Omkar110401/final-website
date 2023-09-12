@@ -423,165 +423,56 @@ body {
 }
 
 @keyframes postText {
-    0% {
+    0%{
         content: '';
     }
-
-    3% {
-        content: "The ";
+    5%{
+        content: 'Technology';
     }
-
-    6% {
-      
-        content: "The remarkable ";
+    15%{
+        content: 'Technology ';
     }
-
-    9% {
-        content: "The remarkable thing ";
+    20%{
+        content: 'Technology is';
     }
-
-    12% {
-        content: "The remarkable thing about ";
+    25%{
+        content: "Technology is ";
     }
-
-    15% {
-        content: "The remarkable thing about technology ";
+    35%{
+        content: "Technology is best";
     }
-
-    18% {
-        content: "The remarkable thing about technology is ";
+    40%{
+        content: "Technology is best ";
     }
-
-    21% {
-        content: "The remarkable thing about technology is its ";
+    45%{
+        content: "Technology is best when";
     }
-
-    24% {
-        content: "The remarkable thing about technology is its ever-evolving ";
+    55%{
+        content: "Technology is best when ";
     }
-
-    27% {
-      color: rgb(153, 1, 153);
-        content: "The remarkable thing about technology is its ever-evolving nature.";
+    60%{
+        content: "Technology is best when it";
     }
-
-    30% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's ";
+    65%{
+        content: "Technology is best when it ";
     }
-
-    33% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual ";
+    75%{
+        content: "Technology is best when it brings";
     }
-
-    36% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance ";
+    80%{
+        content: "Technology is best when it brings ";
     }
-
-    39% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between ";
+    85%{
+        content: "Technology is best when it brings people";
     }
-
-    42% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the ";
+    90%{
+        content: "Technology is best when it brings people ";
     }
-
-    45% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known ";
+    95%{
+        content: "Tecnology is best when it brings people together";
     }
-
-    48% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown,";
-    }
-
-    51% {
-      color:rgb(167, 47, 204);
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where ";
-    }
-
-    54% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each ";
-    }
-
-    57% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery ";
-    }
-
-    60% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a";
-    }
-
-    63% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone";
-    }
-
-    66% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery";
-    }
-
-    69% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we ";
-    }
-
-    72% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate ";
-    }
-
-    75% {
-      color: purple;
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this ";
-    }
-
-    77% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz";
-    }
-
-    89% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we ";
-    }
-
-    81% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock ";
-    }
-
-    83% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the";
-    }
-
-    85% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets ";
-    }
-
-    97% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets of the";
-    }
-
-    89% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets of the universe ";
-    }
-
-    91% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets of the universe and pave ";
-    }
-
-    93% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets of the universe and pave the way ";
-    }
-
-    95% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets of the universe and pave the way for a brighter, ";
-    }
-
-    97% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets of the universe and pave the way for a brighter, more ";
-    }
-
-    99% {
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets of the universe and pave the way for a brighter, more interconnected ";
-    }
-
-    100% {
-
-        content: "The remarkable thing about technology is its ever-evolving nature. It's a perpetual dance between the known and the unknown, where each discovery is a stepping stone to a greater mystery. As we navigate this intricate waltz, we unlock the secrets of the universe and pave the way for a brighter, more interconnected world.";
+    100%{
+        content: "Technology is best when it brings people together!";
     }
 }
 

@@ -191,11 +191,7 @@
     .card {
       max-width: calc(100% - 0px); /* One card per row on smaller screens */
     }
-    .intern-heading{
-      text-align: center;
-      font-size: 30px;
-    }
-    .intern-heading img{
-      display: none;
+    .intern-heading h2{
+      font-size: 28px;
     }
   }

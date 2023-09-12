@@ -311,6 +311,7 @@
       }
       .ag-courses_item {
         -ms-flex-preferred-size: 100%;
+        box-shadow: rgba(209, 209, 209, 0.692) 0px 2px 5px -1px, rgba(209, 209, 209, 0.918) 0px 1px 3px -1px;
         flex-basis: 100%;
         width: 90%;
       }
@@ -328,10 +329,14 @@
       .ag-courses-item_date-box {
         font-size: 16px;
       }
-      .skills-heading h2 {
-        font-size: 30px;
+
+      .skills-heading{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
       }
-      .skills-heading img{
-        display: none;
+      
+
+      .skills-heading h2 {
+        font-size: 28px;
       }
     }

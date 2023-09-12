@@ -250,8 +250,8 @@
       padding-left: 0;
       border-left: none;
     }
-    .short-timeline-heading img{
-      display: none;
+    .short-timeline-heading h2{
+      font-size: 28px;
     }
     .short-timeline-heading{
       font-size: 24px;
