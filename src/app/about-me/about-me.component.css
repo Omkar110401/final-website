@@ -1,254 +1,43 @@
-.about-me-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@media screen and (min-width: 769px){
+.section.is-long {
+    padding-bottom: 16rem;
+}
+.section.is-medium {
+    padding: 9rem 4.5rem;
+}
+.section {
+    padding: 3rem 3rem;
+}
+}
+.section.is-primary {
+    background-color: #6E07F3;
+    color: white;
+}
+.section {
+    padding: 5rem 1.5rem;
+}
+.section.is-long {
+    padding-bottom: 14rem;
+}
+.has-text-centered {
+    text-align: center !important;
+}
+.section.is-primary .subtitle {
+    color: white;
 }
 
-.about-me{
-    margin: 2em;
+.subtitle {
+    font-family: "europa", sans-serif;
+    line-height: 1.5;
 }
-
-.about-me-heading {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
+.has-text-weight-normal {
+    font-weight: 400 !important;
 }
-
-.about-me-heading img:hover{
-    animation: rotateImage 3s;
-    animation-iteration-count: 3;
+@media screen and (min-width: 1024px){
+.is-size-5-desktop {
+    font-size: 1.25rem !important;
 }
-
-@keyframes rotateImage{
-    0%{transform: rotate(0);}
-    100%{transform: rotate(360deg);}
 }
-
-.about-me-heading h2 {
-    letter-spacing: 2px;
-    font-size: 40px;
-}
-
-.about-me-heading h2 span {
-    color: rgb(30, 0, 139);
-    text-shadow: 2px 2px 2px #c28dff;
-}
-
-
-.hover {
-    color: #0000;
-    background:
-        linear-gradient(90deg, rgb(30, 0, 139) 50%, #000 0) var(--_p, 100%)/200% no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    transition: .4s;
-}
-
-.hover:hover {
-    cursor: pointer;
-    --_p: 0%;
-    /* text-shadow: 5px 5px 5px #bb80ff; */
-}
-
-.about-me-heading img {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-}
-
-.pic-text {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 90%;
-    margin-top: 20px;
-    /* Add spacing between pic and text */
-}
-
-.about-pic {
-    display: flex;
-    align-items: center;
-}
-
-.about-pic img {
-    margin-right: 2em;
-    width: 400px;
-    /* Increase the size of the image */
-    height: 400px;
-    border-radius: 50%;
-    /* Make the image round */
-    opacity: 0.95;
-    /* Changed to a value between 0 and 1 */
-    transition: transform 2s ease-in-out;
-    box-shadow: 5px 5px 5px rgb(99, 99, 99);
-    
-}
-
-.about-pic img:hover {
-    cursor: pointer;
-    box-shadow: 10px 10px 10px black;
-    animation: picAnimate 5s linear forwards;
-    transition: all 1s, transform 2s ease-in-out;
-    /* Added the transform transition */
-    animation-delay: 2s;
-    opacity: 1;
-    animation-iteration-count: 3;
-    /* Fully opaque when hovering */
-}
-
-@keyframes hidecomp {
-    0%{opacity: 1;}
-    25%{opacity: 0.75;}
-    50%{opacity: 0.5;}
-    75%{opacity: 0.25;}
-    100%{opacity: 0;}
-  }
-
-  .hide-component{
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .show-component{
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .hide-pic{
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-
-  .show-pic{
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-
-  @keyframes getcomp {
-    0%{opacity: 0;}
-    25%{opacity: 0.25;}
-    50%{opacity: 0.5;}
-    75%{opacity: 0.75;}
-    100%{opacity: 1;}
-  }
-
-@keyframes picAnimate {
-    10% {
-
-        transform: rotateX(20deg);
-    }
-
-    20% {
-        transform: rotateX(40deg);
-    }
-
-    30% {
-        transform: rotateX(60deg);
-    }
-
-    40% {
-        transform: rotateX(40deg);
-    }
-
-    50% {
-        transform: rotateX(20deg);
-    }
-
-    60% {
-        transform: rotateX(0deg);
-    }
-
-    70% {
-        transform: rotateY(25deg);
-    }
-
-    80% {
-        transform: rotateY(50deg);
-    }
-
-    90% {
-        transform: rotateY(25deg);
-    }
-
-    100% {
-        transform: rotateY(0deg) rotate(360deg);
-    }
-}
-
-.about-text {
-    border-radius: 20px 20px 20px 20px;
-    flex: 1;
-    font-size: 22px;
-    padding: 1em;
-    text-align: justify;
-    background-color: rgb(230, 230, 230);
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-}
-
-.about-text .text-heading h3{
-    text-align: center;
-    font-size: 24px;
-    margin: 0;
-}
-
-.about-text .text-heading p{
-    text-align: center;
-    font-size: 18px;
-    margin: 0;
-}
-
-.text-heading img{
-    width: 20px;
-    height: 20px;
-}
-
-@media (max-width: 768px) {
-    .pic-text {
-        flex-direction: column;
-    }
-
-    .about-pic img {
-        display: none;
-    }
-
-    .about-me-heading{
-        margin-top: 1em;
-    }
-
-    .about-me-heading h2{
-        font-size: 28px;
-    }
-
-    /* .about-me-heading img{
-        display: none;
-    } */
-    .about-me{
-        padding: 0;
-        margin: 0;
-        margin-bottom: 3em;
-    }
-    .about-text .text-heading h3{
-        margin-bottom: 0.5em;
-    }
-    .about-text p{
-        margin-top: 1em;
-    }
-    .about-text{
-        font-size: 16px;
-    }
-}
-
-@media (min-width:770px) and (max-width:1050px) {
-    .about-pic {
-        display: none;
-    }
-
-    .pic-text {
-        flex-direction: column;
-    }
-    .about-me-heading{
-        font-size: 30px;
-    }
+.section.is-primary .title {
+    color: white;
 }

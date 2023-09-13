@@ -73,6 +73,7 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+
 @media screen and (max-width: 768px) {
     .social-icons {
         flex-direction: row;
@@ -103,6 +104,12 @@
     /* Optional: Increase size on hover (adjust as needed) */
     .social-icons img:hover {
         transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width:860px) and (max-width:1000px) {
+    #for-mobile-desktop{
+        display:none;
     }
 }
 

@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ShortTimelineComponent } from './short-timeline/short-timeline.component';
+import { SkillsMaximComponent } from './skills-maxim/skills-maxim.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ShortTimelineComponent } from './short-timeline/short-timeline.componen
     TimelineComponent,
     NotFoundComponent,
     ShortTimelineComponent,
+    SkillsMaximComponent,
   ],
   imports: [
     BrowserModule,

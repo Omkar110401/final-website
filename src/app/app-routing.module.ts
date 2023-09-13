@@ -5,6 +5,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SkillsMaximComponent } from './skills-maxim/skills-maxim.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path:'timeline/home',
     component:HomeComponent
+  },
+  {
+    path:'skillMaxim',
+    component:SkillsMaximComponent
   },
   {
     path:'**',

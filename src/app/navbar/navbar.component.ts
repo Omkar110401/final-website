@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -34,7 +34,7 @@ scrollToAboutMe() {
 }
 
 scrollToSkills() {
-  const element = document.getElementById('skills');
+  const element = document.getElementById('skill');
   if (element) {
     if (window.scrollY !== 0) {
       window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top first
@@ -89,6 +89,17 @@ scrollToProjects() {
   }
 }
 
+
+// Event listener for mobile menu links
+addMobileMenuLinkListeners() {
+  const mobileMenuLinks = document.querySelectorAll('.mobile-menu .nav-link');
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      // Close the mobile menu when a link is clicked
+      this.closeMobileMenu();
+    });
+  });
+}
 closeMobileMenu() {
   const mobileMenu = document.querySelector('.mobile-menu');
   if (mobileMenu) {
@@ -103,17 +114,12 @@ closeMobileMenu() {
   }
 }
 
-// Event listener for mobile menu links
-addMobileMenuLinkListeners() {
-  const mobileMenuLinks = document.querySelectorAll('.mobile-menu .nav-link');
-  mobileMenuLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      // Close the mobile menu when a link is clicked
-      this.closeMobileMenu();
-    });
-  });
-}
-
+// Event listener for scrolling
+@HostListener('window:scroll')
+  onScroll() {
+    // Close the mobile menu when the user scrolls
+    this.closeMobileMenu();
+  }
 // Call the function to add event listeners when the component is initialized
 ngOnInit() {
   this.addMobileMenuLinkListeners();

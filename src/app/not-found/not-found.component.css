@@ -24,11 +24,17 @@ ul li{
     height: 20px;
 }
 button{
+    margin-top: 1rem;
+    color: white;
     width: 20em;
     height: 3em;
     border-radius: 12px;
     cursor: pointer;
     box-shadow: none;
     border: none;
-    background-color: rgb(221, 185, 255);
+    background-color: rgb(88, 0, 170);
+}
+button:hover{
+    transform: scale(1.1);
+    transition: 0.4s linear ease-in-out;
 }
