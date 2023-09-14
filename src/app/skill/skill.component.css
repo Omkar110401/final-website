@@ -5,6 +5,8 @@
   border-radius: 15px;
   padding-top: 1em;
   /* background-color: rgb(223, 223, 223); */
+  margin-bottom: 0;
+  padding-bottom: 1em;
 }
 
 .inner-skills {
@@ -23,6 +25,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 0;
 }
 
 .skills-heading h2 {
@@ -72,7 +75,7 @@
   height: 3rem;
 }
 .custom-button-color:hover{
-  background-color: #7504d1;
+  background-color: #5304d1;
   transform: scale(1.1);
 }
 @keyframes moveLeft {
@@ -140,7 +143,8 @@
 .ag-courses-item_link {
   display: block;
   padding: 30px 20px;
-  background: linear-gradient(rgb(255, 255, 255), rgb(192, 192, 192));
+  /* background: linear-gradient(rgb(255, 255, 255), rgb(192, 192, 192)); */
+  background:white;
   overflow: hidden;
   position: relative;
   text-decoration: none;

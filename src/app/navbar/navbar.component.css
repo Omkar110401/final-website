@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=IBM+Plex+Sans:wght@300&family=Indie+Flower&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Glory:wght@500&display=swap');
+
 /* Increase the height and padding to make the navbar taller */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px; /* Adjust the padding as needed */
+  padding: 20px 20px;
+  /* Adjust the padding as needed */
   background-color: #ffffff;
   color: #000000;
   max-height: 200px;
@@ -37,9 +39,11 @@
   0% {
     transform: scaleX(0);
   }
+
   50% {
     transform: scaleX(1);
   }
+
   100% {
     transform: scaleX(0);
   }
@@ -50,7 +54,8 @@
 .navbar-right {
   display: flex;
   gap: 10px;
-  height: 100%; /* Adjust the height as needed */
+  height: 100%;
+  /* Adjust the height as needed */
   align-items: center;
 }
 
@@ -60,14 +65,15 @@
   text-decoration: none;
   font-size: 20px;
   padding: 10px;
-  position: relative; /* Added for the line effect */
+  position: relative;
+  /* Added for the line effect */
   margin-right: 10px;
   cursor: pointer;
   font-family: 'Finger Paint', cursive;
   font-family: 'Glory', sans-serif;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: rgb(111, 0, 255);
   transition: 1s ease;
 }
@@ -75,20 +81,22 @@
 .nav-link::before {
   content: '';
   position: absolute;
-  bottom: -2px; /* Adjust the value to control the distance between text and line */
+  bottom: -2px;
+  /* Adjust the value to control the distance between text and line */
   left: 0;
   width: 0;
   height: 3px;
-  background: rgb(156,39,176);
-  background: linear-gradient(193deg, rgba(156,39,176,1) 0%, rgba(139,45,253,1) 100%);
-  transition: width 1s ease; /* Transition effect for the line width */
+  background: rgb(156, 39, 176);
+  background: linear-gradient(193deg, rgba(156, 39, 176, 1) 0%, rgba(139, 45, 253, 1) 100%);
+  transition: width 1s ease;
+  /* Transition effect for the line width */
 }
 
 .nav-link:hover::before {
   width: 100%;
 }
 
-.navbar-left img{
+.navbar-left img {
   width: 4rem;
   height: 4rem;
   margin-right: 1rem;
@@ -99,7 +107,8 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  height: 100%; /* Adjust the height as needed */
+  height: 100%;
+  /* Adjust the height as needed */
 }
 
 .bar {
@@ -112,7 +121,8 @@
 /* Add styles for the resume dropdown */
 .resume-dropdown {
   position: absolute;
-  top: 70%; /* Position below the parent link */
+  top: 70%;
+  /* Position below the parent link */
   left: 0;
   display: none;
   flex-direction: column;
@@ -129,104 +139,125 @@
   color: white;
   text-decoration: none;
   padding: 5px 0;
-  position: relative; /* Added for the line effect */
+  position: relative;
+  /* Added for the line effect */
 }
 
 .resume-dropdown a::before {
   content: '';
   position: absolute;
-  bottom: -2px; /* Adjust the value to control the distance between text and line */
+  bottom: -2px;
+  /* Adjust the value to control the distance between text and line */
   left: 0;
   width: 0;
   height: 3px;
   background: rgb(156, 39, 176);
   background: linear-gradient(193deg, rgba(156, 39, 176, 1) 0%, rgba(139, 45, 253, 1) 100%);
-  transition: width 0.5s ease; /* Transition effect for the line width */
+  transition: width 0.5s ease;
+  /* Transition effect for the line width */
 }
 
 .resume-dropdown a:hover::before {
-  width: 50%; /* Expand the line on hover */
+  width: 50%;
+  /* Expand the line on hover */
 }
 
 .nav-link:hover .resume-dropdown {
-  display: flex; /* Show the dropdown on hover */
+  display: flex;
+  /* Show the dropdown on hover */
   pointer-events: auto;
 }
 
 
 /* Mobile menu container styles */
 .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #1b1b1b;
-    position: fixed;
-    /* top: 0; */
-    left: -100%; /* Initially hidden to the left */
-    z-index: 1;
-    width: 250px; /* Adjust the width as needed */
-    height: 100%;
-    /* padding-top: 20px; */
-    transition: left 0.6s ease;
-    color: white;
-  }
-  
-  /* Show/hide the mobile menu */
-  .active {
-    left: 0; /* Slide in from the left */
-  }
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  position: fixed;
+  /* top: 0; */
+  left: -100%;
+  /* Initially hidden to the left */
+  z-index: 1;
+  width: 250px;
+  /* Adjust the width as needed */
+  height: 100%;
+  /* padding-top: 20px; */
+  transition: left 0.6s ease;
+  color: white;
+}
 
-  .mobile-menu-icon:hover{
-    border-radius: 50%;
-    background-color: rgb(185, 185, 185);
-  }
+/* Show/hide the mobile menu */
+.active {
+  left: 0;
+  /* Slide in from the left */
+}
 
-  /* ... existing styles ... */
+.mobile-menu-icon:hover {
+  border-radius: 50%;
+  background-color: rgb(185, 185, 185);
+}
+
+/* ... existing styles ... */
 
 /* Highlight animation for the hamburger icon when clicked */
 .mobile-menu-icon.clicked {
-    border-radius: 50%;
-    background-color: rgb(115, 116, 116); /* The initial highlight color */
-    transition: background-color 0.5s ease, transform 0.3s ease; /* Add a transition for smooth color and transform change */
-    transform: rotate(0deg); /* Start with no rotation */
-  }
-  
-  .mobile-menu .nav-link:hover{
-    color: rgb(167, 104, 250);
-  }
-  .mobile-menu-icon.clicked .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg); /* Tilt the first bar */
-  }
-  
-  .mobile-menu-icon.clicked .bar:nth-child(2) {
-    opacity: 0; /* Hide the middle bar */
-  }
-  
-  .mobile-menu-icon.clicked .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg); /* Tilt the third bar */
-  }
-  
-  @keyframes highlight {
-    0% {
-      border-radius: 50%;
-      background-color: rgb(134, 134, 134); /* Change to the desired highlight color */
-    }
-    100% {
-      border-radius: 0%; /* Reset to original shape */
-      background-color: rgb(115, 116, 116); /* Reset to original background color */
-    }
-  }
-  
+  border-radius: 50%;
+  background-color: rgb(115, 116, 116);
+  /* The initial highlight color */
+  transition: background-color 0.5s ease, transform 0.3s ease;
+  /* Add a transition for smooth color and transform change */
+  transform: rotate(0deg);
+  /* Start with no rotation */
+}
 
-  .mobile-menu-icon.clicked .bar {
-    background-color: rgb(201, 195, 195); /* Change to the desired highlight color */
+.mobile-menu .nav-link:hover {
+  color: rgb(167, 104, 250);
+}
+
+.mobile-menu-icon.clicked .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  /* Tilt the first bar */
+}
+
+.mobile-menu-icon.clicked .bar:nth-child(2) {
+  opacity: 0;
+  /* Hide the middle bar */
+}
+
+.mobile-menu-icon.clicked .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  /* Tilt the third bar */
+}
+
+@keyframes highlight {
+  0% {
+    border-radius: 50%;
+    background-color: rgb(134, 134, 134);
+    /* Change to the desired highlight color */
   }
+
+  100% {
+    border-radius: 0%;
+    /* Reset to original shape */
+    background-color: rgb(115, 116, 116);
+    /* Reset to original background color */
+  }
+}
+
+
+.mobile-menu-icon.clicked .bar {
+  background-color: rgb(201, 195, 195);
+  /* Change to the desired highlight color */
+}
 
 
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
-  .nav-link{
+  .nav-link {
     color: white;
   }
+
   .navbar-right {
     display: none;
   }
@@ -235,23 +266,46 @@
     display: flex;
     align-items: center;
   }
+
   .nav-link:hover::before {
     width: 40%;
   }
-  #logo{
+
+  #logo {
     display: block;
   }
-  #text{
+
+  #text {
     display: none;
   }
 }
 
-.navbar-left>a{
+.custom-shape-divider-top-1694662133 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1694662133 svg {
+  position: relative;
+  display: block;
+  width: calc(148% + 1.3px);
+  height: 300px;
+}
+
+.custom-shape-divider-top-1694662133 .shape-fill {
+  fill: #6E07F3;
+}
+
+.navbar-left>a {
   color: black;
   text-decoration: none;
 }
 
-.navbar-left>a:hover{
+.navbar-left>a:hover {
   transition-duration: 1.4s;
   color: rgb(122, 2, 235);
 }

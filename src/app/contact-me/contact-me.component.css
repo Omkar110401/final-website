@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     /* Allow icons to wrap to the next line */
     text-align: center;
-    background-color: #fbfbfd;
+    background-color: #ffffff;
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: center;
@@ -20,34 +20,16 @@
     /* Adjust spacing between icons */
 }
 
-.social-icons img {
-    width: 40px;
-    /* Adjust the width as needed */
-    height: auto;
-    /* Maintain aspect ratio */
-    transition: transform 0.2s;
-    /* Add a smooth transition effect on hover */
+
+.social-icons i{
+    font-size: 40px;
 }
 
-.social-icons img:hover {
-    transform: scale(1.2);
-    /* Increase the size on hover (adjust as needed) */
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
+
 
 .developer {
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
-    font-family: 'Artifika', serif;
-    font-family: 'Finger Paint', cursive;
-    font-family: 'Glory', sans-serif;
-    font-family: 'Marko One', serif;
-    font-family: 'Miltonian Tattoo', cursive;
-    font-family: 'Pompiere', cursive;
-    font-family: 'Smythe', cursive;
-    font-family: 'Syne Tactile', cursive;
-    font-family: 'Twinkle Star', cursive;
     color: rgb(0, 0, 0);
     width: 100%;
     font-size: 20px;
@@ -68,11 +50,56 @@
     list-style: none;
 }
 
+.logo{
+    margin-bottom: 1rem;
+}
+
+.logo img{
+    width: 20%;
+}
+
 .logo img:hover{
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
+.social-icons a.button:hover {
+    background: #ffffff;
+    color: #6E07F3;
+    border: 2px solid white;
+}
+@media screen and (min-width: 769px){
+footer .social-icons a.button.is-medium {
+    font-size: 1.18rem;
+}
+}
+footer .social-icons a.button.is-medium {
+    font-size: 1.05rem;
+}
+@media screen and (min-width: 769px){
+footer .social-icons a.button {
+    margin: 0 0.8rem;
+}
+}
+footer .social-icons a.button {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 100%;
+    margin: 0 0.2rem;
+    height: 47px;
+    width: 47px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.button.is-medium {
+    font-size: 1.25rem;
+}
+.button:active, .button.is-active {
+    border-color: #4a4a4a;
+    color: #363636;
+}
+.button:hover, .button.is-hovered {
+    border-color: #b5b5b5;
+    color: #363636;
+}
 
 @media screen and (max-width: 768px) {
     .social-icons {
@@ -115,6 +142,7 @@
 
 .new_footer_area {
     background: #fbfbfd;
+    margin-bottom: 2rem;
 }
 
 
