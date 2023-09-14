@@ -1,5 +1,5 @@
 .outer-skills {
-    margin: 5rem;
+    margin-top: 5rem;
     padding: 2em;
     border-radius: 15px;
     padding-top: 1em;
@@ -362,6 +362,10 @@
 @media only screen and (max-width: 768px) {
     .outer-skills {
         padding: 0.5em;
+    }
+
+    .custom-button-color{
+        width: 30%;
     }
 
     .inner-skills {

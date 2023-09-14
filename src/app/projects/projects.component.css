@@ -68,9 +68,70 @@
   font-size: 18px;
 }
 
+.project-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.project-heading h2 {
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.project-heading h2>span {
+  color: rgb(30, 0, 139);
+  text-shadow: 2px 2px 2px #7700ff;
+}
+
+.hover {
+  color: #0000;
+  background:
+    linear-gradient(90deg, rgb(30, 0, 139) 50%, #000 0) var(--_p, 100%)/200% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: .4s;
+}
+
+.hover:hover {
+  cursor: pointer;
+  --_p: 0%;
+  text-shadow: 2px 2px 2px #7700ff;
+}
+
+.project-heading img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.project-heading img:hover {
+  animation: flyRocket 6s linear 5;
+}
+
+@keyframes flyRocket {
+  0%{
+   transform: rotate(-45deg);
+  }
+  25%{
+   transform: rotate(0) translateY(1em);
+  }
+  50%{
+   transform: rotate(0) translateY(0.5em);
+  }
+  75%{
+   transform: rotate(180deg) translateY(-1em);
+  }
+  100%{
+   transform: rotate(360deg) translateY(-0.5em)
+  }
+ }
+
 /* Style for card description */
 .card-description {
   flex-grow: 1;
+  text-align: justify;
 }
 
 .card:hover {
@@ -78,3 +139,21 @@
   transform: scale(1.02); /* Enlarge the card on hover */
 }
 
+#smaller-heading{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* One card per row for mobile screens */
+  }
+  .project-heading h2 {
+    font-size: 24px;
+  }
+  #smaller-heading {
+    display: block;
+  }
+  #bigger-heading{
+    display: none;
+  }
+}

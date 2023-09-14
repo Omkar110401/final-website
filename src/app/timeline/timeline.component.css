@@ -33,26 +33,49 @@ section{
   text-align: center;
 }
 
-/* Add these styles to make the button look like a navbar button */
-.navbar-button {
-    background: #fff; /* Button background color */
-    color: #456990; /* Button text color */
-    margin: 20px;
-    left:50%;
-    padding: 10px 50px; /* Button padding */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    font-weight: bold; /* Make the text bold */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background 0.3s ease; /* Add a smooth transition for background color */
-}
-
 .arrow-left {
     font-size: 32px; /* Adjust the size as needed */
     color: #000; /* Arrow color */
     cursor: pointer; /* Add a cursor pointer for interaction */
     /* animation: blink 0.5s infinite alternate ease-in-out;  */
 }
+
+/* Center the button on the screen */
+.button {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  border: none;
+  background-color: inherit;
+  margin-bottom: 1rem;
+}
+
+/* Style for the button */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  border-radius: 12px; /* Apply a 12px radius */
+  background-color: #f45b69; /* Purple color */
+  transition: transform 0.4s; /* Add a scaling effect on hover */
+  border: none;
+}
+
+button span{
+  font-size: 40px;
+  color: white;
+}
+
+/* Hover effect */
+button:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
 
 @keyframes blink {
     0% {
@@ -200,6 +223,12 @@ time {
   .timeline ul li:nth-child(even) div {
     left: -289px;
     /*250+45-6*/
+  }
+  button{
+    width: 40%;
+  }
+  button span{
+    font-size: 24px;
   }
 }
 
