@@ -1,0 +1,49 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+
+.scroll-to-top img {
+    width: 60px;
+    /* Adjust the width and height as needed */
+    height: 60px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.scroll-to-top img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes buttonClickAnimation {
+    0% {
+        transform: translateY(0);
+        /* Initial position */
+    }
+    25%{
+        transform: translateY(-1rem);
+    }
+    50% {
+        transform: translateY(-1rem);
+        /* Move upwards */
+    }
+    75%{
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(-1rem);
+        /* Return to initial position */
+    }
+}
+
+/* Apply the animation to the button when clicked */
+.scroll-to-top.clicked {
+    animation: buttonClickAnimation 0.5s ease-in-out;
+}
+

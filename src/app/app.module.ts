@@ -16,6 +16,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ShortTimelineComponent } from './short-timeline/short-timeline.component';
 import { SkillsMaximComponent } from './skills-maxim/skills-maxim.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SkillsMaximComponent } from './skills-maxim/skills-maxim.component';
     NotFoundComponent,
     ShortTimelineComponent,
     SkillsMaximComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,
