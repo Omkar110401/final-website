@@ -1,0 +1,2 @@
+Add scroll to top button 
+Implement lazy loading (for main components)
