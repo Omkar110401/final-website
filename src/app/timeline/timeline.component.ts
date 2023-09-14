@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-timeline',
@@ -7,15 +8,26 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./timeline.component.css']
 })
 export class TimelineComponent {
+  private previousNavigationTime: number=0;
   items: NodeListOf<Element> = document.querySelectorAll(".timeline li");
 
-  constructor(private titleService:Title) {
+  constructor(private titleService:Title, private router: Router) {
     this.titleService.setTitle("Omkar's Timeline");
   }
 
   ngOnInit() {
     this.items = document.querySelectorAll(".timeline li");
     this.checkElementsInView();
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        // Get the current navigation time
+        const currentNavigationTime = performance.now();
+        if (this.previousNavigationTime && currentNavigationTime - this.previousNavigationTime < 100) {
+          this.router.navigate(['']);
+        }
+        this.previousNavigationTime = currentNavigationTime;
+      }
+    });
   }
 
   @HostListener("window:scroll", ["$event"])
