@@ -1,0 +1,18 @@
+<div class="project-cards">
+    <div class="card" *ngFor="let project of projects">
+      <img src="{{ project.img }}" alt="{{ project.title }}" class="card-image">
+      <div class="card-content">
+        <h2>{{ project.title }}</h2>
+        <div class="card-info">
+          <p> &bullet; {{ project.skills }}</p>
+        </div>
+        <div class="card-duration">
+            <p>&bullet; {{ project.start }} - {{project.end}}</p>
+          </div>
+        <div class="card-description">
+          <p>{{ project.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

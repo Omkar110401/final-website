@@ -1,0 +1,80 @@
+/* Define the card container */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add some spacing between cards */
+  justify-content: space-between; /* Add gaps on left and right */
+  padding: 1.5rem;
+}
+
+/* Style for individual card */
+.card {
+  width: calc(50% - 10px); /* Two cards per row for smaller screens with spacing */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Improved box shadow */
+  overflow: hidden;
+  transition: transform 0.2s; /* Add a hover animation */
+  margin-bottom: 20px; /* Add margin between cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Style for card image (smaller and centered) */
+/* Style for card image (smaller and centered) */
+.card-image {
+  width: 100%;
+  max-height: 200px; /* Decrease image height to make it smaller */
+  object-fit: contain; /* Keep the entire image visible */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 10px; /* Add margin between image and content */
+  margin-top: 10px; /* Add margin at the top */
+}
+
+/* Style for card content */
+.card-content {
+  margin-top: 1rem;
+  padding: 20px;
+  flex-grow: 1; /* Expand the content to take remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add a purple background color to the card header */
+.card-content h2 {
+  background-color: #800080; /* Purple color */
+  color: #fff;
+  /* background-clip: text; */
+  /* color: transparent; */
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+/* Style for card info */
+.card-info {
+  margin-top: 1rem;
+  font-size: 18px;
+  margin-bottom: 15px; /* Increase margin for technologies */
+  font-weight: bold; /* Highlight technologies */
+}
+
+.card-duration{
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Style for card description */
+.card-description {
+  flex-grow: 1;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.02); /* Enlarge the card on hover */
+}
+
