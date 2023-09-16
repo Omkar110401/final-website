@@ -31,10 +31,6 @@ const routes: Routes = [
     component:TimelineComponent
   },
   {
-    path:'timeline/home',
-    component:HomeComponent
-  },
-  {
     path:'skillMaxim',
     component:SkillsMaximComponent
   },

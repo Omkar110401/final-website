@@ -259,7 +259,7 @@ time {
 }
 
 /* Center the button on the screen */
-.button {
+.time-button {
   margin: 1.5rem;
   display: flex;
   justify-content: center;
@@ -267,7 +267,7 @@ time {
   padding: 20px 20px;
   border: none;
   background-color: inherit;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* Style for the button */
@@ -277,20 +277,16 @@ button {
   align-items: center;
   width: 20%;
   height: 50px;
-  border-radius: 12px;
   /* Apply a 12px radius */
   transition: transform 0.4s;
   /* Add a scaling effect on hover */
   border: none;
+
 }
 
 .custom-color{
   background-color: #5900ff;
-}
-
-button span {
-  font-size: 40px;
-  color: rgb(255, 255, 255);
+  /* margin-bottom: 2rem; */
 }
 
 /* Hover effect */
