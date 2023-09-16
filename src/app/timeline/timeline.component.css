@@ -21,7 +21,7 @@ body {
 .intro {
   background: #b69cff;
   padding: 100px 0;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .container {
@@ -75,6 +75,14 @@ h1 {
   border-radius: 12px;
 }
 
+.timeline ul li div h2{
+  color: white;
+}
+
+.timeline ul li div p{
+  color: rgb(0, 0, 0);
+}
+
 .timeline ul li div::before {
   content: "";
   position: absolute;
@@ -109,6 +117,8 @@ time {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 8px;
+  color: white;
+  letter-spacing: 2px;
 }
 
 
