@@ -275,7 +275,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
   height: 50px;
   /* Apply a 12px radius */
   transition: transform 0.4s;
