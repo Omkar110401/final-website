@@ -8,22 +8,20 @@
 
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  background: #456990;
+  background: #3700ff;
   color: #fff;
   overflow-x: hidden;
   padding-bottom: 50px;
 }
 
-section{
-    background-color: #456990;
-}
 
 /* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-  background: #f45b69;
+  background: #b69cff;
   padding: 100px 0;
+  color: white;
 }
 
 .container {
@@ -32,66 +30,6 @@ section{
   margin: 0 auto;
   text-align: center;
 }
-
-.arrow-left {
-    font-size: 32px; /* Adjust the size as needed */
-    color: #000; /* Arrow color */
-    cursor: pointer; /* Add a cursor pointer for interaction */
-    /* animation: blink 0.5s infinite alternate ease-in-out;  */
-}
-
-/* Center the button on the screen */
-.button {
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 20px;
-  border: none;
-  background-color: inherit;
-  margin-bottom: 1rem;
-}
-
-/* Style for the button */
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 50px;
-  border-radius: 12px; /* Apply a 12px radius */
-  background-color: #f45b69; /* Purple color */
-  transition: transform 0.4s; /* Add a scaling effect on hover */
-  border: none;
-}
-
-button span{
-  font-size: 40px;
-  color: white;
-}
-
-/* Hover effect */
-button:hover {
-  transform: scale(1.1); /* Scale the button on hover */
-  cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-
-@keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-/* Style the button on hover */
-.navbar-button:hover {
-    background: #f45b69; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
-}
-
 
 h1 {
   font-size: 2.5rem;
@@ -102,7 +40,7 @@ h1 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: #456990;
+  background: #6E07F3;
   padding: 50px 0;
 }
 
@@ -114,7 +52,6 @@ h1 {
   padding-top: 50px;
   background: #fff;
 }
-
 
 .timeline ul li::after {
   content: "";
@@ -134,15 +71,9 @@ h1 {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #f45b69;
+  background: #5cebbc;
+  border-radius: 12px;
 }
-
-
-.timeline ul li div h2{
-    color: white;
-    margin-bottom: 10px;
-}
-
 
 .timeline ul li div::before {
   content: "";
@@ -160,7 +91,7 @@ h1 {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #f45b69 transparent transparent;
+  border-color: transparent #5cebbc transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -170,7 +101,7 @@ h1 {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #f45b69;
+  border-color: transparent transparent transparent #5cebbc;
 }
 
 time {
@@ -189,7 +120,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #f45b69;
+  background: #5cebbc;
 }
 
 .timeline ul li div {
@@ -220,15 +151,10 @@ time {
   .timeline ul li div {
     width: 250px;
   }
+
   .timeline ul li:nth-child(even) div {
     left: -289px;
     /*250+45-6*/
-  }
-  button{
-    width: 40%;
-  }
-  button span{
-    font-size: 24px;
   }
 }
 
@@ -236,16 +162,19 @@ time {
   .timeline ul li {
     margin-left: 20px;
   }
+
   .timeline ul li div {
     width: calc(100vw - 91px);
   }
+
   .timeline ul li:nth-child(even) div {
     left: 45px;
   }
+
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent #5cebbc transparent transparent;
   }
 }
 
@@ -267,30 +196,26 @@ time {
 }
 
 .timeline-star ul li::after {
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+  clip-path: polygon(50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%);
 }
 
 .timeline-heptagon ul li::after {
-  clip-path: polygon(
-    50% 0%,
-    90% 20%,
-    100% 60%,
-    75% 100%,
-    25% 100%,
-    0% 60%,
-    10% 20%
-  );
+  clip-path: polygon(50% 0%,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      10% 20%);
 }
 
 .timeline-infinite ul li::after {
@@ -301,10 +226,65 @@ time {
   0% {
     transform: translateX(-50%) scale(1);
   }
+
   50% {
     transform: translateX(-50%) scale(1.25);
   }
+
   100% {
     transform: translateX(-50%) scale(1);
   }
+}
+
+
+
+.arrow-left {
+  font-size: 32px;
+  /* Adjust the size as needed */
+  color: #000;
+  /* Arrow color */
+  cursor: pointer;
+  /* Add a cursor pointer for interaction */
+  /* animation: blink 0.5s infinite alternate ease-in-out;  */
+}
+
+/* Center the button on the screen */
+.button {
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  border: none;
+  background-color: inherit;
+  margin-bottom: 2rem;
+}
+
+/* Style for the button */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  border-radius: 12px;
+  /* Apply a 12px radius */
+  transition: transform 0.4s;
+  /* Add a scaling effect on hover */
+  border: none;
+}
+
+.custom-color{
+  background-color: #5900ff;
+}
+
+button span {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+/* Hover effect */
+button:hover {
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
 }

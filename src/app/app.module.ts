@@ -18,7 +18,9 @@ import { ShortTimelineComponent } from './short-timeline/short-timeline.componen
 import { SkillsMaximComponent } from './skills-maxim/skills-maxim.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { CertificatesComponent } from './certificates/certificates.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FeedbackComponent } from './feedback/feedback.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,10 +39,13 @@ import { CertificatesComponent } from './certificates/certificates.component';
     SkillsMaximComponent,
     ScrollToTopComponent,
     CertificatesComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

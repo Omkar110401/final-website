@@ -7,6 +7,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SkillsMaximComponent } from './skills-maxim/skills-maxim.component';
 import { CertificatesComponent } from './certificates/certificates.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:'skillMaxim',
     component:SkillsMaximComponent
+  },
+  {
+    path:'feedback',
+    component:FeedbackComponent
   },
   {
     path:'certificates',
