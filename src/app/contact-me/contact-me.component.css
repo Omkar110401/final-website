@@ -329,7 +329,14 @@ h6 {
 
 .custom-feedback-button{
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(white, rgb(235, 235, 235));
+    background: linear-gradient(rgb(144, 25, 255), rgb(81, 46, 209));
     box-shadow: 1px 1px 2px black;
-    color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.custom-feedback-button:hover{
+    text-decoration: underline;
+    color: white;
+    text-decoration-thickness: 1px;
 }

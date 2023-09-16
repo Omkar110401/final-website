@@ -6,3 +6,24 @@
         padding-left: 1rem;
     }
 }
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem;
+    margin-bottom: 5rem;
+    border: none;
+}
+
+button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-back-button{
+    text-align: center;
+    width: 100px;
+}
