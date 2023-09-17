@@ -75,11 +75,11 @@ h1 {
   border-radius: 12px;
 }
 
-.timeline ul li div h2{
+.timeline ul li div h2 {
   color: white;
 }
 
-.timeline ul li div p{
+.timeline ul li div p {
   color: rgb(0, 0, 0);
 }
 
@@ -283,7 +283,7 @@ button {
 
 }
 
-.custom-color{
+.custom-color {
   background-color: #5900ff;
   /* margin-bottom: 2rem; */
 }

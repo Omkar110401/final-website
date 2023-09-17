@@ -119,7 +119,8 @@
 .ag-courses-item_link {
     display: block;
     padding: 30px 20px;
-    background: linear-gradient(rgb(235, 235, 235), rgb(197, 195, 195));
+    /* background: linear-gradient(rgb(235, 235, 235), rgb(197, 195, 195)); */
+    background: white;
     overflow: hidden;
     position: relative;
     text-decoration: none;
@@ -136,6 +137,7 @@
     text-decoration: none;
     cursor: pointer;
     color: #FFF;
+    line-height: 1.2;
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
