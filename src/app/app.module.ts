@@ -21,6 +21,7 @@ import { CertificatesComponent } from './certificates/certificates.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     SkillsMaximComponent,
     ScrollToTopComponent,
     CertificatesComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    LoadingAnimationComponent
   ],
   imports: [
     BrowserModule,

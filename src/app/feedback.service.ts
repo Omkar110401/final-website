@@ -5,18 +5,29 @@ import { Injectable } from '@angular/core';
 })
 export class FeedbackService {
 
-  constructor() { }
   private scriptLoaded = false;
 
   loadScript() {
-    if (!this.scriptLoaded) {
-      const script = document.createElement('script');
-      script.src = 'https://static.elfsight.com/platform/platform.js';
-      script.defer = true;
-      script.setAttribute('data-use-service-core', '');
+    return new Promise<void>((resolve, reject) => {
+      if (!this.scriptLoaded) {
+        const script = document.createElement('script');
+        script.src = 'https://static.elfsight.com/platform/platform.js';
+        script.defer = true;
+        script.setAttribute('data-use-service-core', '');
 
-      document.body.appendChild(script);
-      this.scriptLoaded = true;
-    }
+        script.onload = () => {
+          this.scriptLoaded = true;
+          resolve();
+        };
+
+        script.onerror = () => {
+          reject(new Error('Failed to load script'));
+        };
+
+        document.body.appendChild(script);
+      } else {
+        resolve();
+      }
+    });
   }
 }
