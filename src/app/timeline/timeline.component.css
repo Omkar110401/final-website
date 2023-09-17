@@ -276,6 +276,7 @@ button {
   justify-content: center;
   align-items: center;
   height: 50px;
+  width: max-content;
   /* Apply a 12px radius */
   transition: transform 0.4s;
   /* Add a scaling effect on hover */
@@ -286,6 +287,7 @@ button {
 .custom-color {
   background-color: #5900ff;
   /* margin-bottom: 2rem; */
+  width: 100px;
 }
 
 /* Hover effect */
