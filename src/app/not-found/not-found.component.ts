@@ -11,10 +11,10 @@ export class NotFoundComponent implements AfterViewInit{
 
   constructor(private elementRef: ElementRef, private renderer:Renderer2) {}
   ngOnInit(){
-    
+    this.renderer.setStyle(document.body, 'background-color', 'purple');
   }
   ngAfterViewInit() {
-    this.renderer.setStyle(document.body, 'background-color', 'purple');
+    
     // Find the scene element within the component's view
     this.scene = this.elementRef.nativeElement.querySelector('#scene');
 
