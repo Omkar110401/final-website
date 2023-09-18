@@ -289,6 +289,16 @@
   }
 }
 
+
+@media screen and (min-width:768px) and (max-width:1000px){
+  #logo{
+    display: block;
+  }
+  #text{
+    display: none;
+  }
+}
+
 .custom-shape-divider-top-1694662133 {
   position: absolute;
   top: 0;
