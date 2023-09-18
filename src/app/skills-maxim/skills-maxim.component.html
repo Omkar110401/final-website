@@ -1,305 +1,23 @@
-<div class="outer-skills" >
+<div class="outer-skills">
     <div class="skills-heading">
         <img src="..\assets\images\skill-cards.png" alt="skills">
         <h2 class="hover">My Skills</h2>
     </div>
-    <div class="inner-skills" >
+    <div class="inner-skills">
         <div class="ag-format-container">
             <div class="ag-courses_box">
-                <!-- Modify each skill card as follows -->
-                <div class="ag-courses_item" >
+                <div class="ag-courses_item" *ngFor="let skill of skillsData">
                     <a class="ag-courses-item_link">
                         <div class="ag-courses-item_bg"></div>
-
                         <div class="ag-courses-item_title">
-                            <img src="..\assets\images\c and c++.png">
+                            <img [src]="skill.image" [alt]="skill.name">
                         </div>
                         <div class="ag-courses-item_title">
-                            C/C++
-                        </div>
-                        <!-- Add the location information here (hidden initially) -->
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, Curriculum
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <!-- Repeat the above structure for other skills -->
-                <div class="ag-courses_item" >
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\java.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Java
+                            {{ skill.name }}
                         </div>
                         <div class="ag-courses-item_date-box">
                             <span class="ag-courses-item_date">
-                                Personal Projects, Internships, Curriculum
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item" >
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\python.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Python
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, Curriculum
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\mysql.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            MySQL
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, Curriculum
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                
-
-                <div class="ag-courses_item" >
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\pandas.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Pandas
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, College Projects
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\numpy.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Numpy
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, College Projects
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\tensorflow.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            TensorFlow
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, College Projects
-
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\html.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            HTML
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, College Projects
-
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\tableau.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Tableau
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, College Projects
-
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\css.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            CSS
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, College Projects
-
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\js.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            JavaScript
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, College Projects
-
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\matplotlib.png">
-                        </div>
-                        <div class="ag-courses-item_title ag-courses-item_title">
-                            Matplotlib
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, College Projects
-
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\postgresql.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            PgSQL
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\git.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Git
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item" >
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\excel.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            MS Excel
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\angular.jpg">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Angular
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships
+                                {{ skill.description }}
                             </span>
                         </div>
                     </a>
@@ -310,10 +28,12 @@
 </div>
 <div class="custom-shape-divider-top-1694659715">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"></path>
     </svg>
 </div>
 <div class="flex-button"> <!-- Added has-text-centered class -->
-    <button routerLink="" class="button is-link is-focused custom-button-color">&larr;</button>
+    <button routerLink="" class="button is-link is-focused custom-button-color">Homepage</button>
 </div>
 <app-scroll-to-top></app-scroll-to-top>

@@ -1,7 +1,7 @@
 <div class="education">
     <div class="education-heading">
         <img src="..\assets\images\education.png" alt="education-logo">
-        <h2 class="hover" id="bigger-heading">My <span>Academic Journey</span></h2>
+        <h2 class="hover" id="bigger-heading">My<span> Academic Journey</span></h2>
         <h2 class="hover" id="smaller-heading">My<span> Academics</span></h2>
     </div>
     <section data-section-id="1" data-share="" data-category="tables" data-component-id="155b5733_02_awz"
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="box p-0">
                 <div class="table-container is-size-6-mobile">
-                    <table class="table is-fullwidth ">
+                    <table class="table is-fullwidth">
                         <thead>
                             <tr>
                                 <th class="py-4 has-text-weight-bold">School Name</th>
@@ -21,80 +21,26 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr *ngFor="let academicRecord of academicData">
                                 <td>
-                                    <img class="mr-3 is-inline-block is-64x64" src="..\assets\images\ycce.jpg" alt="ycce"
-                                        data-config-id="auto-img-1-2">
+                                    <img class="mr-3 is-inline-block is-64x64" [src]="academicRecord.imageSrc" alt="school-image">
                                     <div class="is-inline-block">
-                                        <p class="is-size-8 has-text-weight-semibold">Yeshwantrao Chavan College of Engineering</p>
-                                        <a class="is-size-7" href="https://www.ycce.edu/" target="_blank">Visit Site</a>
+                                        <p class="is-size-8 has-text-weight-semibold">{{ academicRecord.schoolName }}</p>
+                                        <a class="is-size-7" [href]="academicRecord.website" target="_blank">Visit Site</a>
                                     </div>
                                 </td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">Nagpur, India</td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">Bachelor Of Engineer (B.E)</td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">Information Technology (IT)</td>
+                                <td class="py-4 is-size-8 has-text-weight-normal">{{ academicRecord.address }}</td>
+                                <td class="py-4 is-size-8 has-text-weight-normal">{{ academicRecord.degree }}</td>
+                                <td class="py-4 is-size-8 has-text-weight-normal">{{ academicRecord.specialization }}</td>
                                 <td class="py-4">
-                                    <span
-                                        class="tag has-background-link-light has-text-primary has-text-weight-semibold is-uppercase is-rounded">completed</span>
+                                    <span class="tag has-background-link-light has-text-primary has-text-weight-semibold is-uppercase is-rounded">{{ academicRecord.status }}</span>
                                 </td>
                                 <td>
                                     <div class="px-3">
-                                        <p class="is-size-8 has-text-weight-semibold">90%</p>
+                                        <p class="is-size-8 has-text-weight-semibold">{{ academicRecord.marks }}</p>
                                         <div class="is-relative p-1 has-background-grey-light is-radius">
                                             <div class="is-absolute is-top is-left has-background-link is-radius"
-                                                style="width: 90%; height: 100%;"></div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img class="mr-3 is-inline-block is-64x64" src="..\assets\images\santaji.jpg" alt="santaji"
-                                        data-config-id="auto-img-6-2">
-                                    <div class="is-inline-block">
-                                        <p class="is-size-8 has-text-weight-semibold">Santaji Mahavidyalaya</p>
-                                        <a class="is-size-7" href="https://santajicollege.ac.in/" target="_blank">Visit Site</a>
-                                    </div>
-                                </td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">Nagpur, India</td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">HSC</td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">General (PCME)</td>
-                                <td class="py-4">
-                                    <span
-                                        class="tag has-background-link-light has-text-primary has-text-weight-semibold is-uppercase is-rounded">Completed</span>
-                                </td>
-                                <td>
-                                    <div class="px-3">
-                                        <p class="is-size-8 has-text-weight-semibold">83.38%</p>
-                                        <div class="is-relative p-1 has-background-grey-light is-radius">
-                                            <div class="is-absolute is-top is-left has-background-link is-radius"
-                                                style="width: 83.38%; height: 100%;"></div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img class="mr-3 is-inline-block is-64x64" src="..\assets\images\somalwar.webp" alt="somalwar"
-                                        data-config-id="auto-img-11-2">
-                                    <div class="is-inline-block">
-                                        <p class="is-size-8 has-text-weight-semibold">Somalwar Nikalas</p>
-                                        <a class="is-size-7" href="https://somalwarnikalas.org/" target="_blank">Visit Site</a>
-                                    </div>
-                                </td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">Nagpur, India</td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">SSC</td>
-                                <td class="py-4 is-size-8 has-text-weight-semibold">General</td>
-                                <td class="py-4">
-                                    <span
-                                        class="tag has-background-link-light has-text-primary has-text-weight-semibold is-uppercase is-rounded">Completed</span>
-                                </td>
-                                <td>
-                                    <div class="px-3">
-                                        <p class="is-size-8 has-text-weight-semibold">89.20%</p>
-                                        <div class="is-relative p-1 has-background-grey-light is-radius">
-                                            <div class="is-absolute is-top is-left has-background-link is-radius"
-                                                style="width: 89.30%; height: 100%;"></div>
+                                                [style.width]="academicRecord.marks" style="height: 100%;"></div>
                                         </div>
                                     </div>
                                 </td>

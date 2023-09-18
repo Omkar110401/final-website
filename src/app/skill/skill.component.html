@@ -1,84 +1,33 @@
-<div class="outer-skills" >
+<!-- src/app/greeting-popup/greeting-popup.component.html -->
+
+<!-- Rest of your HTML content -->
+
+<div class="outer-skills">
     <div class="inner-skills">
-        <div class="ag-format-container">
-            <div class="ag-courses_box">
-                <!-- Modify each skill card as follows -->
-                <div class="ag-courses_item" >
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\c and c++.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            C/C++
-                        </div>
-                        <!-- Add the location information here (hidden initially) -->
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, Curriculum
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <!-- Repeat the above structure for other skills -->
-                <div class="ag-courses_item" >
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\java.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Java
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, Curriculum
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item" >
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\python.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            Python
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, Curriculum
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            <img src="..\assets\images\mysql.png">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            MySQL
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                Personal Projects, Internships, Curriculum
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+      <div class="ag-format-container">
+        <div class="ag-courses_box">
+          <div class="ag-courses_item" *ngFor="let skill of skillsData">
+            <a class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">
+                <img [src]="skill.image" [alt]="skill.name">
+              </div>
+              <div class="ag-courses-item_title">
+                {{ skill.name }}
+              </div>
+              <div class="ag-courses-item_date-box">
+                <span class="ag-courses-item_date">
+                  {{ skill.description }}
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="flex-button"> <!-- Added has-text-centered class -->
-    <button routerLink="skillMaxim" class="button is-link is-focused custom-button-color">Get All {{skills.length}} Skills</button>
-</div>
+  </div>
+  
+  <div class="flex-button">
+    <button routerLink="skillMaxim" class="button is-link is-focused custom-button-color">Get All {{skillsMaxim.length}} Skills</button>
+  </div>
+  

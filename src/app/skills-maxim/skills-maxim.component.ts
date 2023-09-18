@@ -1,5 +1,6 @@
 import { Component, Renderer2, ElementRef, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { skillsData } from './skill-maxim-data';
 
 @Component({
   selector: 'app-skills-maxim',
@@ -7,6 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./skills-maxim.component.css']
 })
 export class SkillsMaximComponent implements OnInit{
+  skillsData=skillsData;
   private previousNavigationTime: number=0;
   constructor(private renderer: Renderer2, private el: ElementRef, private router:Router) { }
 

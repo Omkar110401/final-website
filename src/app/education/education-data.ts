@@ -1,44 +1,36 @@
-export const  EDUCATION=[
+// academic-data.ts
+
+export const academicData = [
     {
-        img:'../assets/images/somalwar.png',
-        name:'Somalwar Nikalas',
-        details:[{
-            start:'May, 2007',
-            end:'May, 2017',
-            degree:'Secondary Education (SSC)',
-            specialization:'General',
-            location:'Nagpur, India',
-            marks:89.20,
-            cgpa:0
-    }],
-        link:'https://somalwarnikalas.org/'
+      schoolName: 'Yeshwantrao Chavan College of Engineering',
+      address: 'Nagpur, India',
+      degree: 'Bachelor Of Engineer (B.E)',
+      specialization: 'Information Technology (IT)',
+      status: 'Completed',
+      marks: '90%',
+      website: 'https://www.ycce.edu/',
+      imageSrc: '../assets/images/ycce.jpg',
     },
     {
-        img:'../assets/images/santaji.png',
-        name:'Santaji Mahavidyalaya',
-        details:[{
-            start:'May, 2017',
-            end:'May, 2019',
-            degree:'Higher Secondary Education (HSC)',
-            specialization:'General',
-            location:'Nagpur, India',
-            marks:83.38,
-            cgpa:0
-    }],
-        link:'https://santajicollege.ac.in/'
+      schoolName: 'Santaji Mahavidyalaya',
+      address: 'Nagpur, India',
+      degree: 'HSC',
+      specialization: 'General (PCME)',
+      status: 'Completed',
+      marks: '83.38%',
+      website: 'https://santajicollege.ac.in/',
+      imageSrc: '../assets/images/santaji.jpg',
     },
     {
-        img:'../assets/images/ycce.png',
-        name:'Yeshwantrao Chavan College of Engineering (YCCE)',
-        details:[{
-            start:'May, 2019',
-            end:'May, 2023',
-            degree:'Bachelor of Engineering (B.E)',
-            specialization:'Information Technology (IT)',
-            location:'Nagpur, India',
-            marks:89.56,
-            cgpa:9.72
-    }],
-        link:'https://www.ycce.edu/'
-    }
-]
+      schoolName: 'Somalwar Nikalas',
+      address: 'Nagpur, India',
+      degree: 'SSC',
+      specialization: 'General',
+      status: 'Completed',
+      marks: '89.20%',
+      website: 'https://somalwarnikalas.org/',
+      imageSrc: '../assets/images/somalwar.webp',
+    },
+    // Add more academic records as needed
+  ];
+  
