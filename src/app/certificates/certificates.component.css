@@ -5,6 +5,70 @@
   padding: 20px;
   margin-top: 10rem;
 }
+.certificate-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.certificate-heading h2 {
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.certificate-heading h2>span {
+  color: rgb(30, 0, 139);
+  text-shadow: 1px 1px 1px #7700ff;
+}
+
+.hover {
+  color: #0000;
+  background:
+    linear-gradient(90deg, rgb(30, 0, 139) 50%, #000 0) var(--_p, 100%)/200% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: .4s;
+}
+
+.hover:hover {
+  cursor: pointer;
+  --_p: 0%;
+  text-shadow: 2px 2px 2px #7700ff;
+}
+
+.certificate-heading img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.certificate-heading img:hover {
+  animation: moveUp 2s linear forwards;
+  animation-iteration-count: 3;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-1em);
+  }
+
+  50% {
+    transform: translateY(0) rotate(360deg);
+  }
+
+  75% {
+    transform: translateY(1em);
+  }
+
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
 
 .certificate-cards {
   display: flex;
@@ -111,7 +175,7 @@
 button{
   margin-top: 1rem;
   font-size: 20px;
-}
+}     
 
 .custom-color{
   width: 200px;
