@@ -18,6 +18,10 @@ interface Certificate {
 })
 export class CertificatesComponent {
 
+  constructor(private renderer:Renderer2){
+    this.renderer.setStyle(document.body, 'background-color', 'white');
+  }
+
   filteredCertificates: Certificate[] = certificatesData;
 
 
