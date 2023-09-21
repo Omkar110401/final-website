@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FeedbackService } from '../feedback.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-feedback',
@@ -9,7 +10,9 @@ import { FeedbackService } from '../feedback.service';
 export class FeedbackComponent {
   loading = true; // Variable to control the loading animation
 
-  constructor(private widgetLoader: FeedbackService) {}
+  constructor(private widgetLoader: FeedbackService, private titleService: Title) {
+    this.titleService.setTitle("Feedback Form")
+  }
 
   ngOnInit() {
     // Add a delay before loading the script (e.g., 3 seconds delay)

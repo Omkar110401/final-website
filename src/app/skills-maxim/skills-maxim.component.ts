@@ -1,6 +1,7 @@
 import { Component, Renderer2, ElementRef, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { skillsData } from './skill-maxim-data';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-skills-maxim',
@@ -10,7 +11,9 @@ import { skillsData } from './skill-maxim-data';
 export class SkillsMaximComponent implements OnInit{
   skillsData=skillsData;
   private previousNavigationTime: number=0;
-  constructor(private renderer: Renderer2, private el: ElementRef, private router:Router) { }
+  constructor(private renderer: Renderer2, private el: ElementRef, private router:Router, private titleService: Title) {
+    this.titleService.setTitle("Omkar's Skills");
+   }
 
   ngOnInit() {
     this.renderer.setStyle(document.documentElement, 'background-color', 'whitesmoke');

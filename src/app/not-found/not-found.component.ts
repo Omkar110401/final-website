@@ -1,4 +1,5 @@
 import { Component, ElementRef, AfterViewInit, Renderer2} from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import * as Parallax from 'parallax-js';
 @Component({
   selector: 'app-not-found',
@@ -9,7 +10,9 @@ export class NotFoundComponent implements AfterViewInit{
   private scene!: HTMLElement;
   private parallax!: Parallax;
 
-  constructor(private elementRef: ElementRef, private renderer:Renderer2) {}
+  constructor(private elementRef: ElementRef, private renderer:Renderer2, private titleService: Title) {
+    this.titleService.setTitle("404...Not Found!")
+  }
   ngOnInit(){
     this.renderer.setStyle(document.body, 'background-color', 'purple');
   }

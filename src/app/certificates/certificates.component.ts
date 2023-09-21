@@ -1,5 +1,6 @@
 import { Component, Renderer2 } from '@angular/core';
 import { certificatesData } from './certificate-data';
+import { Title } from '@angular/platform-browser';
 
 
 interface Certificate {
@@ -18,8 +19,9 @@ interface Certificate {
 })
 export class CertificatesComponent {
 
-  constructor(private renderer:Renderer2){
+  constructor(private renderer:Renderer2, private titleService: Title){
     this.renderer.setStyle(document.body, 'background-color', 'white');
+    this.titleService.setTitle("Omkar's Certificates")
   }
 
   filteredCertificates: Certificate[] = certificatesData;
