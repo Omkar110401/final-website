@@ -13,6 +13,7 @@ export class SkillsMaximComponent implements OnInit{
   private previousNavigationTime: number=0;
   constructor(private renderer: Renderer2, private el: ElementRef, private router:Router, private titleService: Title) {
     this.titleService.setTitle("Omkar's Skills");
+    this.renderer.setStyle(document.body, 'background-color', 'white');
    }
 
   ngOnInit() {
