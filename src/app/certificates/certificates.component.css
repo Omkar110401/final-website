@@ -188,4 +188,7 @@ button{
     width: 200px;
     margin-left: 2rem;
   }
+  .certificate-heading h2{
+    font-size: 24px;
+  }
 }

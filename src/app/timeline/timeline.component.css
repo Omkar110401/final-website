@@ -162,6 +162,9 @@ time {
     width: 250px;
   }
 
+  .intro h1{
+    font-size: 24px;
+  }
   .timeline ul li:nth-child(even) div {
     left: -289px;
     /*250+45-6*/
