@@ -22,6 +22,184 @@ section {
     width: 150px;
 }
 
+
+.type-write {
+    position: relative;
+}
+
+.cursor {
+    display: inline-block;
+    animation: cursorBlink 1s infinite;
+    margin-left: 5px; /* Adjust the distance between the cursor and text */
+}
+
+.type-write {
+    animation: writeText 5s linear forwards;
+    animation-delay: 2s;
+}
+
+.type-write::after {
+    content: "";
+    animation: writeText 15s linear forwards;
+    animation-delay: 0.5s;
+    display: inline-block; /* Ensure it's displayed */
+}
+
+.cursor{
+    animation: cursorBlink 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursorBlink{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes writeText {
+    2%{
+        content: 'D';
+    }
+    4%{
+        content: 'Da';
+    }
+    6%{
+        content: "Dat";
+    }
+    8%{
+        content: "Data";
+    }
+    10%{
+        content: "Data ";
+    }
+    12%{
+        content: "Data A";
+    }
+    14%{
+        content: "Data An";
+    }
+    16%{
+        content: "Data Ana";
+    }
+    18%{
+        content: "Data Anal";
+    }
+    20%{
+        content: "Data Analy";
+    }
+    22%{
+        content: "Data Analys";
+    }
+    24%{
+        content: "Data Analysi";
+    }
+    26%{
+        content: "Data Analysis";
+    }
+    28%{
+        content: "Data Analysis, ";
+    }
+    30%{
+        content: "Data Analysis, M";
+    }
+    32%{
+        content: "Data Analysis, Ma";
+    }
+    34%{
+        content: "Data Analysis, Mac";
+    }
+    36%{
+        content: "Data Analysis, Mach";
+    }
+    38%{
+        content: "Data Analysis, Machi";
+    }
+    40%{
+        content: "Data Analysis, Machin";
+    }
+    42%{
+        content: "Data Analysis, Machine";
+    }
+    44%{
+        content: "Data Analysis, Machine L";
+    }
+    46%{
+        content: "Data Analysis, Machine Le"
+    }
+    48%{
+        content: "Data Analysis, Machine Lea";
+    }
+    50%{
+        content: "Data Analysis, Machine Lear";
+    }
+    52%{
+        content: "Data Analysis, Machine Learn";
+    }
+    54%{
+        content: "Data Analysis, Machine Learna";
+    }
+    55%{
+        content: "Data Analysis, Machine Learn";
+    }
+    57%{
+        content: "Data Analysis, Machine Learni";
+    }
+    58%{
+        content: "Data Analysis, Machine Learnin";
+    }
+    60%{
+        content: "Data Analysis, Machine Learning";
+    }
+    62%{
+        content: "Data Analysis, Machine Learning &";
+    }
+    68%{
+        content: "Data Analysis, Machine Learning & D";
+    }
+    70%{
+        content: "Data Analysis, Machine Learning & De";
+    }
+    72%{
+        content: "Data Analysis, Machine Learning & Dee";
+    }
+    74%{
+        content: "Data Analysis, Machine Learning & Deep";
+    }
+    78%{
+        content: "Data Analysis, Machine Learning & Deep ";
+    }
+    82%{
+        content: "Data Analysis, Machine Learning & Deep L";
+    }
+    84%{
+        content: "Data Analysis, Machine Learning & Deep Le";
+    }
+    86%{
+        content: "Data Analysis, Machine Learning & Deep Lea";
+    }
+    88%{
+        content: "Data Analysis, Machine Learning & Deep Lear";
+    }
+    90%{
+        content: "Data Analysis, Machine Learning & Deep Learn";
+    }
+    92%{
+        content: "Data Analysis, Machine Learning & Deep Learni";
+    }
+    94%{
+        content: "Data Analysis, Machine Learning & Deep Learnin";
+    }
+    98%{
+        content: "Data Analysis, Machine Learning & Deep Learning";
+    }
+    100%{
+        content: "Data Analysis, Machine Learning & Deep Learning.";
+    }
+}
+
 @media screen and (min-width: 769px){
 .avatar {
     width: 210px;
