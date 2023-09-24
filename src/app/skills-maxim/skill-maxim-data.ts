@@ -81,6 +81,25 @@ export const skillsData = [
       image: '../assets/images/angular.jpg',
       description: 'Personal Projects, Internships',
     },
-    // Add more skills here if needed
+    {
+      name: "Azure",
+      image: '../assets/images/azure.png',
+      description: 'Personal Projects, Internships, College Projects' 
+    },
+    {
+      name: "AWS",
+      image: '../assets/images/aws.png',
+      description: 'Personal Projects, Internships' 
+    },
+    {
+      name: "Business Intelligence",
+      image: '../assets/images/bi.png',
+      description: 'Personal Projects, College Projects' 
+    },
+    {
+      name: "Bulma CSS",
+      image: '../assets/images/bulma.png',
+      description: 'Personal Projects' 
+    }
   ];
   

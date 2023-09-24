@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { skills } from './skills-data';
+// import { skills } from './skills-data';
 import { skillsData } from '../skills-maxim/skill-maxim-data';
 
 @Component({
@@ -9,5 +9,6 @@ import { skillsData } from '../skills-maxim/skill-maxim-data';
 })
 export class SkillComponent {
   skillsMaxim=skillsData;
-  skillsData = skillsData.slice(0, 4);
+  chosenSkills = ['Java', 'Python', 'MySQL', 'Azure'];
+  filteredSkills = this.skillsMaxim.filter(skill => this.chosenSkills.includes(skill.name)).slice(0, 4);
 }

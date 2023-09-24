@@ -17,7 +17,7 @@ export class SkillsMaximComponent implements OnInit{
    }
 
   ngOnInit() {
-    this.renderer.setStyle(document.documentElement, 'background-color', 'whitesmoke');
+    // this.renderer.setStyle(document.documentElement, 'background-color', 'whitesmoke');
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         // Get the current navigation time

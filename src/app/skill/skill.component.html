@@ -6,7 +6,7 @@
     <div class="inner-skills">
       <div class="ag-format-container">
         <div class="ag-courses_box">
-          <div class="ag-courses_item" *ngFor="let skill of skillsData">
+          <div class="ag-courses_item" *ngFor="let skill of filteredSkills">
             <a class="ag-courses-item_link">
               <div class="ag-courses-item_bg"></div>
               <div class="ag-courses-item_title">
@@ -28,6 +28,6 @@
   </div>
   
   <div class="flex-button">
-    <button routerLink="skillMaxim" class="button is-link is-focused custom-button-color">Get All {{skillsMaxim.length}} Skills</button>
+    <button routerLink="skillMaxim" class="button is-link is-focused custom-button-color">See All {{skillsMaxim.length}} Skills</button>
   </div>
   
