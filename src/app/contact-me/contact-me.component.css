@@ -22,7 +22,7 @@
 
 
 .social-icons i{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -119,13 +119,8 @@ footer .social-icons a.button {
         /* Adjust spacing between icons */
     }
 
-    .social-icons img {
-        width: 20px;
-        /* Adjust the width as needed */
-        height: auto;
-        /* Maintain aspect ratio */
-        transition: transform 0.2s;
-        /* Add a smooth transition effect on hover */
+    .social-icons i{
+        font-size: 20px;
     }
 
     /* Optional: Increase size on hover (adjust as needed) */
