@@ -1,39 +1,16 @@
-<div class="outer-skills">
-    <div class="skills-heading">
-        <img src="..\assets\images\skill-cards.png" alt="skills">
-        <h2 class="hover">My Skills</h2>
+<div class="skills" style="padding: 2rem;">
+    <div class="title">
+        <h1 style="font-size: 28px;text-align: center;font-weight: 600;letter-spacing: 2px;">Skills</h1>
     </div>
-    <div class="inner-skills">
-        <div class="ag-format-container">
-            <div class="ag-courses_box">
-                <div class="ag-courses_item" *ngFor="let skill of skillsData">
-                    <a class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-                        <div class="ag-courses-item_title">
-                            <img [src]="skill.image" [alt]="skill.name">
-                        </div>
-                        <div class="ag-courses-item_title">
-                            {{ skill.name }}
-                        </div>
-                        <div class="ag-courses-item_date-box">
-                            <span class="ag-courses-item_date">
-                                {{ skill.description }}
-                            </span>
-                        </div>
-                    </a>
-                </div>
+    <div class="cards" *ngFor="let skills of skillsData">
+        <div class="card-content">
+            <div class="card-image">
+                <img [src]='skills.image' alt="">
+            </div>
+            <div class="content">
+                <h1>{{skills.name}}</h1>
+                <p>{{skills.description}}</p>
             </div>
         </div>
     </div>
 </div>
-<div class="custom-shape-divider-top-1694659715">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"></path>
-    </svg>
-</div>
-<div class="flex-button"> <!-- Added has-text-centered class -->
-    <button routerLink="" class="button is-link is-focused custom-button-color">Homepage</button>
-</div>
-<app-scroll-to-top></app-scroll-to-top>

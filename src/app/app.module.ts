@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
+import { SkillModalComponent } from './skill-modal/skill-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { LoadingAnimationComponent } from './loading-animation/loading-animation
     ScrollToTopComponent,
     CertificatesComponent,
     FeedbackComponent,
-    LoadingAnimationComponent
+    LoadingAnimationComponent,
+    SkillModalComponent
   ],
   imports: [
     BrowserModule,

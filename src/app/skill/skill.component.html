@@ -1,33 +1,31 @@
-<!-- src/app/greeting-popup/greeting-popup.component.html -->
-
-<!-- Rest of your HTML content -->
-
+<!-- skill.component.html -->
 <div class="outer-skills">
-    <div class="inner-skills">
-      <div class="ag-format-container">
-        <div class="ag-courses_box">
-          <div class="ag-courses_item" *ngFor="let skill of filteredSkills">
-            <a class="ag-courses-item_link">
-              <div class="ag-courses-item_bg"></div>
-              <div class="ag-courses-item_title">
-                <img [src]="skill.image" [alt]="skill.name">
-              </div>
-              <div class="ag-courses-item_title">
-                {{ skill.name }}
-              </div>
-              <div class="ag-courses-item_date-box">
-                <span class="ag-courses-item_date">
-                  {{ skill.description }}
-                </span>
-              </div>
-            </a>
-          </div>
+  <div class="inner-skills">
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+        <div class="ag-courses_item" *ngFor="let skill of filteredSkills">
+          <a class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+            <div class="ag-courses-item_title">
+              <img [src]="skill.image" [alt]="skill.name">
+            </div>
+            <div class="ag-courses-item_title">
+              {{ skill.name }}
+            </div>
+            <div class="ag-courses-item_date-box">
+              <span class="ag-courses-item_date">
+                {{ skill.description }}
+              </span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
-  
-  <div class="flex-button">
-    <button routerLink="skillMaxim" class="button is-link is-focused custom-button-color">See All {{skillsMaxim.length}} Skills</button>
-  </div>
-  
+</div>
+
+<div class="flex-button">
+  <button class="button is-link is-focused custom-button-color" (click)="toggleSkillModal()">See All {{skillsMaxim.length}} Skills</button>
+</div>
+
+<app-skill-modal [isModalVisible]="isModalVisible" (closeModal)="closeModal()"></app-skill-modal>

@@ -23,7 +23,6 @@ export class FeedbackService {
         script.onerror = () => {
           reject(new Error('Failed to load script'));
         };
-
         document.body.appendChild(script);
       } else {
         resolve();

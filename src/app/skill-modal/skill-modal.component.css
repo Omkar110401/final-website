@@ -1,0 +1,68 @@
+.skills-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.inner-skills-modal {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden; /* Hide the scrollbar, but allow scrolling */
+    border-radius: 15px;
+}
+
+/* Add a wrapper for border-radius */
+.inner-skills-modal-wrapper {
+    overflow: scroll; /* Enable scrolling for the wrapper */
+    border-radius: 15px;
+    width: 100%;
+    margin: 0; /* Reset margin to avoid spacing issues */
+}
+
+/* WebKit scrollbar styling (Chrome, Safari) */
+.inner-skills-modal-wrapper::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+/* Optional: Customize scrollbar track and handle appearance */
+.inner-skills-modal-wrapper::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.inner-skills-modal-wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.close {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    position: fixed;
+    z-index: 99999;
+    margin-bottom: 4rem;
+}
+
+.close i:hover{
+    cursor: pointer;
+}
+
+.modal-content{
+    border: 1px solid black;
+}
+
