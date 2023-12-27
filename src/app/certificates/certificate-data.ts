@@ -25,6 +25,23 @@ export const certificatesData: Certificate[] = [
     googleDriveLink: 'https://drive.google.com/file/d/1Ju50Rxhkm8p8BLmafz0--4KyKQBXDZ01/view?usp=sharing'
   },
   {
+    name:'Microsoft Azure Fundamentals: AZ-900',
+    category:'competitive-exams',
+    photo:'../assets/images/azure.png',
+    date:'Dec-2023',
+    description:'MS-Azure certification, demonstrating the deep understanding of fundamental concepts of Azure Platform.',
+    googleDriveLink:'https://learn.microsoft.com/api/credentials/share/en-us/OmkarJoshi-1104/56113D7CC623F58F?sharingId=9FFD3F7C8922A9E4'
+  },
+  {
+    name:'Microsoft Azure Data Fundamentals: DP-900',
+    category:'competitive-exams',
+    photo:'../assets/images/azure.png',
+    date:'Dec-2023',
+    description:'MS-Azure data certification, demonstrating the deep understanding of data fundamental concepts of Azure Platform.',
+    googleDriveLink:'https://learn.microsoft.com/api/credentials/share/en-us/OmkarJoshi-1104/18CE1B2E57CAD4EA?sharingId=9FFD3F7C8922A9E4'
+  },
+  
+  {
     name: 'NTPEL - Essential of Mathematics for Machine Learning',
     category: 'competitive-exams',
     photo: '../assets/images/nptel.jpg',
