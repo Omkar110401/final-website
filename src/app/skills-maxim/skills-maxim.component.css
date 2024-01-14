@@ -140,4 +140,7 @@
     .cards .card-content .content p{
         font-size: 16px;
     }
+    .cards .card-content .content h1{
+        font-size: 14px;
+    }
 }
