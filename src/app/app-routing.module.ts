@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
+import { FooterComponent } from './footer/footer.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SkillsMaximComponent } from './skills-maxim/skills-maxim.component';
@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path:'contact-me',
-    component:ContactMeComponent
+    component:FooterComponent
   },
   {
     path:'timeline',

@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillComponent } from './skill/skill.component';
 import { InternshipComponent } from './internship/internship.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
+import { FooterComponent } from './footer/footer.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
@@ -31,7 +31,7 @@ import { SkillModalComponent } from './skill-modal/skill-modal.component';
     AboutMeComponent,
     SkillComponent,
     InternshipComponent,
-    ContactMeComponent,
+    FooterComponent,
     EducationComponent,
     ProjectsComponent,
     HomeComponent,
