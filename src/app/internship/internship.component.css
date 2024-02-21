@@ -82,7 +82,12 @@
     max-width: 100%; /* Full width by default */
     flex: 1 1 100%;
   }
-  
+
+  .card:last-child {
+    flex-basis: 100%; /* Forces the last card to occupy full width */
+    max-width: calc(100% - 20px); /* Adjust the max width to the container width */
+}
+
   .card:hover {
     color: white;
     transform: translateY(-5px);
