@@ -11,7 +11,7 @@ export class IntroComponent {
   @ViewChild('text', { static: true }) textElement!: ElementRef;
   @ViewChild('cursor', { static: true }) cursorElement!: ElementRef;
 
-  private textContent = "Data Analysis, Machine Learning & Deep Learning.";
+  private textContent = "Development, Data Analysis & Machine Learning.";
   private currentIndex = 0;
   private typingComplete = false;
   constructor() { }
