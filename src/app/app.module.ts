@@ -23,6 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
 import { SkillModalComponent } from './skill-modal/skill-modal.component';
+import { ExperienceComponent } from './experience/experience.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { SkillModalComponent } from './skill-modal/skill-modal.component';
     CertificatesComponent,
     FeedbackComponent,
     LoadingAnimationComponent,
-    SkillModalComponent
+    SkillModalComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
